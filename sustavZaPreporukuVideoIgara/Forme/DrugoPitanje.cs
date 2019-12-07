@@ -33,7 +33,7 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            //GitIgnore test
+            //GitIgnore sada uspješno radi
         }
     }
 }
