@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sustavZaPreporukuVideoIgara", "sustavZaPreporukuVideoIgara\sustavZaPreporukuVideoIgara.csproj", "{BD692550-2867-48BD-86EF-EB6DF92ED361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD692550-2867-48BD-86EF-EB6DF92ED361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD692550-2867-48BD-86EF-EB6DF92ED361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD692550-2867-48BD-86EF-EB6DF92ED361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD692550-2867-48BD-86EF-EB6DF92ED361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F6CF40E-60B7-4C41-B384-393B8461C168}
+	EndGlobalSection
+EndGlobal
