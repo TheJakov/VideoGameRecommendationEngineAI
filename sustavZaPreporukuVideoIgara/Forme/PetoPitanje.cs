@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace sustavZaPreporukuVideoIgara.Forme
 {
-    public partial class CetvrtoPitanje : Form
+    public partial class PetoPitanje : Form
     {
-        public CetvrtoPitanje()
+        public PetoPitanje()
         {
             InitializeComponent();
         }
@@ -26,8 +26,8 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            PetoPitanje petoPitanje = new PetoPitanje();
-            NavigationHelper.IdiNaFormu(this, petoPitanje);
+            SestoPitanje sestoPitanje = new SestoPitanje();
+            NavigationHelper.IdiNaFormu(this, sestoPitanje);
         }
     }
 }
