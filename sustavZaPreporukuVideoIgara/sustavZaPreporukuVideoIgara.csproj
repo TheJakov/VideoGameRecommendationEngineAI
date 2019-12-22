@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forme\CetvrtoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\CetvrtoPitanje.Designer.cs">
+      <DependentUpon>CetvrtoPitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DrugoPitanje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\CetvrtoPitanje.resx">
+      <DependentUpon>CetvrtoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DrugoPitanje.resx">
       <DependentUpon>DrugoPitanje.cs</DependentUpon>
     </EmbeddedResource>

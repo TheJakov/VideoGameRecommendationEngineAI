@@ -86,7 +86,7 @@
             // 
             this.cbShooter.AutoSize = true;
             this.cbShooter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbShooter.Location = new System.Drawing.Point(130, 128);
+            this.cbShooter.Location = new System.Drawing.Point(119, 115);
             this.cbShooter.Name = "cbShooter";
             this.cbShooter.Size = new System.Drawing.Size(103, 29);
             this.cbShooter.TabIndex = 7;
@@ -97,7 +97,7 @@
             // 
             this.cbRpg.AutoSize = true;
             this.cbRpg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRpg.Location = new System.Drawing.Point(130, 177);
+            this.cbRpg.Location = new System.Drawing.Point(119, 164);
             this.cbRpg.Name = "cbRpg";
             this.cbRpg.Size = new System.Drawing.Size(75, 29);
             this.cbRpg.TabIndex = 8;
@@ -108,7 +108,7 @@
             // 
             this.cbSimulation.AutoSize = true;
             this.cbSimulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSimulation.Location = new System.Drawing.Point(130, 275);
+            this.cbSimulation.Location = new System.Drawing.Point(119, 262);
             this.cbSimulation.Name = "cbSimulation";
             this.cbSimulation.Size = new System.Drawing.Size(125, 29);
             this.cbSimulation.TabIndex = 10;
@@ -119,7 +119,7 @@
             // 
             this.cbMoba.AutoSize = true;
             this.cbMoba.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMoba.Location = new System.Drawing.Point(130, 224);
+            this.cbMoba.Location = new System.Drawing.Point(119, 211);
             this.cbMoba.Name = "cbMoba";
             this.cbMoba.Size = new System.Drawing.Size(94, 29);
             this.cbMoba.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             this.cbPlatformer.AutoSize = true;
             this.cbPlatformer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPlatformer.Location = new System.Drawing.Point(130, 372);
+            this.cbPlatformer.Location = new System.Drawing.Point(119, 359);
             this.cbPlatformer.Name = "cbPlatformer";
             this.cbPlatformer.Size = new System.Drawing.Size(122, 29);
             this.cbPlatformer.TabIndex = 12;
@@ -141,7 +141,7 @@
             // 
             this.cbBattleRoyale.AutoSize = true;
             this.cbBattleRoyale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBattleRoyale.Location = new System.Drawing.Point(130, 323);
+            this.cbBattleRoyale.Location = new System.Drawing.Point(119, 310);
             this.cbBattleRoyale.Name = "cbBattleRoyale";
             this.cbBattleRoyale.Size = new System.Drawing.Size(148, 29);
             this.cbBattleRoyale.TabIndex = 11;
