@@ -70,11 +70,23 @@
     <Compile Include="Forme\DrugoPitanje.Designer.cs">
       <DependentUpon>DrugoPitanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DvanaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DvanaestoPitanje.Designer.cs">
+      <DependentUpon>DvanaestoPitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\JedanaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\JedanaestoPitanje.Designer.cs">
+      <DependentUpon>JedanaestoPitanje.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\OsmoPitanje.cs">
       <SubType>Form</SubType>
@@ -127,8 +139,14 @@
     <EmbeddedResource Include="Forme\DrugoPitanje.resx">
       <DependentUpon>DrugoPitanje.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DvanaestoPitanje.resx">
+      <DependentUpon>DvanaestoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\JedanaestoPitanje.resx">
+      <DependentUpon>JedanaestoPitanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\OsmoPitanje.resx">
       <DependentUpon>OsmoPitanje.cs</DependentUpon>
