@@ -34,7 +34,7 @@
             this.cbDa = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblBrojPitanja = new System.Windows.Forms.Label();
-            this.btnSljedece = new System.Windows.Forms.Button();
+            this.btnZavrsi = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -90,15 +90,15 @@
             this.lblBrojPitanja.TabIndex = 41;
             this.lblBrojPitanja.Text = "16 / 16";
             // 
-            // btnSljedece
+            // btnZavrsi
             // 
-            this.btnSljedece.Location = new System.Drawing.Point(656, 481);
-            this.btnSljedece.Name = "btnSljedece";
-            this.btnSljedece.Size = new System.Drawing.Size(125, 42);
-            this.btnSljedece.TabIndex = 48;
-            this.btnSljedece.Text = "Sljedeće";
-            this.btnSljedece.UseVisualStyleBackColor = true;
-            this.btnSljedece.Click += new System.EventHandler(this.btnSljedece_Click);
+            this.btnZavrsi.Location = new System.Drawing.Point(656, 481);
+            this.btnZavrsi.Name = "btnZavrsi";
+            this.btnZavrsi.Size = new System.Drawing.Size(125, 42);
+            this.btnZavrsi.TabIndex = 48;
+            this.btnZavrsi.Text = "Završi";
+            this.btnZavrsi.UseVisualStyleBackColor = true;
+            this.btnZavrsi.Click += new System.EventHandler(this.btnZavrsi_Click);
             // 
             // btnOdustani
             // 
@@ -116,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 542);
-            this.Controls.Add(this.btnSljedece);
+            this.Controls.Add(this.btnZavrsi);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.lblBrojPitanja);
             this.Controls.Add(this.label1);
@@ -143,7 +143,7 @@
         private System.Windows.Forms.CheckBox cbDa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblBrojPitanja;
-        private System.Windows.Forms.Button btnSljedece;
+        private System.Windows.Forms.Button btnZavrsi;
         private System.Windows.Forms.Button btnOdustani;
     }
 }

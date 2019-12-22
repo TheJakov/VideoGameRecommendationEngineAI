@@ -11,23 +11,22 @@ using System.Windows.Forms;
 
 namespace sustavZaPreporukuVideoIgara.Forme
 {
-    public partial class SesnaestoPitanje : Form
+    public partial class Rezultat : Form
     {
-        public SesnaestoPitanje()
+        public Rezultat()
         {
             InitializeComponent();
         }
 
-        private void btnOdustani_Click(object sender, EventArgs e)
+        private void btnPocetna_Click(object sender, EventArgs e)
         {
             Form1 pocetnaForma = new Form1();
             NavigationHelper.IdiNaFormu(this, pocetnaForma);
         }
 
-        private void btnZavrsi_Click(object sender, EventArgs e)
+        private void btnZatvori_Click(object sender, EventArgs e)
         {
-            Rezultat rezultatForma = new Rezultat();
-            NavigationHelper.IdiNaFormu(this, rezultatForma);
+            Close();
         }
     }
 }
