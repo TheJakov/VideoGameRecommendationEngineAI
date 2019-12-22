@@ -1,6 +1,6 @@
 ﻿namespace sustavZaPreporukuVideoIgara.Forme
 {
-    partial class DevetoPitanje
+    partial class CetrnaestoPitanje
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DevetoPitanje));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CetrnaestoPitanje));
             this.lblDrugoPitanje = new System.Windows.Forms.Label();
             this.cbJakoVazno = new System.Windows.Forms.CheckBox();
             this.cbVazno = new System.Windows.Forms.CheckBox();
@@ -45,18 +45,18 @@
             this.lblDrugoPitanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDrugoPitanje.Location = new System.Drawing.Point(42, 42);
             this.lblDrugoPitanje.Name = "lblDrugoPitanje";
-            this.lblDrugoPitanje.Size = new System.Drawing.Size(676, 29);
-            this.lblDrugoPitanje.TabIndex = 20;
-            this.lblDrugoPitanje.Text = "Koliko ti je bitno prilagođavanje (eng. customization) kod igre?";
+            this.lblDrugoPitanje.Size = new System.Drawing.Size(454, 29);
+            this.lblDrugoPitanje.TabIndex = 24;
+            this.lblDrugoPitanje.Text = "Koliko ti je bitno da je svijet velik u igrici ?";
             // 
             // cbJakoVazno
             // 
             this.cbJakoVazno.AutoSize = true;
             this.cbJakoVazno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbJakoVazno.Location = new System.Drawing.Point(92, 197);
+            this.cbJakoVazno.Location = new System.Drawing.Point(89, 192);
             this.cbJakoVazno.Name = "cbJakoVazno";
             this.cbJakoVazno.Size = new System.Drawing.Size(135, 29);
-            this.cbJakoVazno.TabIndex = 25;
+            this.cbJakoVazno.TabIndex = 35;
             this.cbJakoVazno.Text = "Jako važno";
             this.cbJakoVazno.UseVisualStyleBackColor = true;
             // 
@@ -64,10 +64,10 @@
             // 
             this.cbVazno.AutoSize = true;
             this.cbVazno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVazno.Location = new System.Drawing.Point(92, 153);
+            this.cbVazno.Location = new System.Drawing.Point(89, 148);
             this.cbVazno.Name = "cbVazno";
             this.cbVazno.Size = new System.Drawing.Size(91, 29);
-            this.cbVazno.TabIndex = 24;
+            this.cbVazno.TabIndex = 34;
             this.cbVazno.Text = "Važno";
             this.cbVazno.UseVisualStyleBackColor = true;
             // 
@@ -75,10 +75,10 @@
             // 
             this.cbSvejedno.AutoSize = true;
             this.cbSvejedno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSvejedno.Location = new System.Drawing.Point(92, 109);
+            this.cbSvejedno.Location = new System.Drawing.Point(89, 104);
             this.cbSvejedno.Name = "cbSvejedno";
             this.cbSvejedno.Size = new System.Drawing.Size(117, 29);
-            this.cbSvejedno.TabIndex = 23;
+            this.cbSvejedno.TabIndex = 33;
             this.cbSvejedno.Text = "Svejedno";
             this.cbSvejedno.UseVisualStyleBackColor = true;
             // 
@@ -86,10 +86,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 264);
+            this.label1.Location = new System.Drawing.Point(42, 248);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 25);
-            this.label1.TabIndex = 26;
+            this.label1.TabIndex = 36;
             this.label1.Text = "Moguće označiti samo 1 opciju. ";
             // 
             // lblBrojPitanja
@@ -98,16 +98,16 @@
             this.lblBrojPitanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBrojPitanja.Location = new System.Drawing.Point(22, 484);
             this.lblBrojPitanja.Name = "lblBrojPitanja";
-            this.lblBrojPitanja.Size = new System.Drawing.Size(71, 29);
-            this.lblBrojPitanja.TabIndex = 29;
-            this.lblBrojPitanja.Text = "9 / 16";
+            this.lblBrojPitanja.Size = new System.Drawing.Size(84, 29);
+            this.lblBrojPitanja.TabIndex = 39;
+            this.lblBrojPitanja.Text = "14 / 16";
             // 
             // btnSljedece
             // 
             this.btnSljedece.Location = new System.Drawing.Point(656, 481);
             this.btnSljedece.Name = "btnSljedece";
             this.btnSljedece.Size = new System.Drawing.Size(125, 42);
-            this.btnSljedece.TabIndex = 34;
+            this.btnSljedece.TabIndex = 44;
             this.btnSljedece.Text = "Sljedeće";
             this.btnSljedece.UseVisualStyleBackColor = true;
             this.btnSljedece.Click += new System.EventHandler(this.btnSljedece_Click);
@@ -117,12 +117,12 @@
             this.btnOdustani.Location = new System.Drawing.Point(112, 481);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(125, 42);
-            this.btnOdustani.TabIndex = 33;
+            this.btnOdustani.TabIndex = 43;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
-            // DevetoPitanje
+            // CetrnaestoPitanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,9 +141,9 @@
             this.MaximumSize = new System.Drawing.Size(822, 589);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(822, 589);
-            this.Name = "DevetoPitanje";
+            this.Name = "CetrnaestoPitanje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Prilagođavanje (eng. customization)";
+            this.Text = "Veličina svijeta";
             this.ResumeLayout(false);
             this.PerformLayout();
 

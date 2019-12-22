@@ -68,7 +68,7 @@
             this.lblBrojPitanja.Name = "lblBrojPitanja";
             this.lblBrojPitanja.Size = new System.Drawing.Size(71, 29);
             this.lblBrojPitanja.TabIndex = 10;
-            this.lblBrojPitanja.Text = "3 / 17";
+            this.lblBrojPitanja.Text = "3 / 16";
             // 
             // lblDrugoPitanje
             // 

@@ -58,7 +58,7 @@
             this.lblBrojPitanja.Name = "lblBrojPitanja";
             this.lblBrojPitanja.Size = new System.Drawing.Size(71, 29);
             this.lblBrojPitanja.TabIndex = 6;
-            this.lblBrojPitanja.Text = "2 / 17";
+            this.lblBrojPitanja.Text = "2 / 16";
             // 
             // btnOdustani
             // 

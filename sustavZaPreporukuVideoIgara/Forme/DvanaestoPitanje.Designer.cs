@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DvanaestoPitanje));
             this.lblDrugoPitanje = new System.Windows.Forms.Label();
             this.cb2010 = new System.Windows.Forms.CheckBox();
             this.cb2000 = new System.Windows.Forms.CheckBox();
@@ -99,7 +100,7 @@
             this.lblBrojPitanja.Name = "lblBrojPitanja";
             this.lblBrojPitanja.Size = new System.Drawing.Size(84, 29);
             this.lblBrojPitanja.TabIndex = 37;
-            this.lblBrojPitanja.Text = "12 / 17";
+            this.lblBrojPitanja.Text = "12 / 16";
             // 
             // btnSljedece
             // 
@@ -135,6 +136,7 @@
             this.Controls.Add(this.cb2000);
             this.Controls.Add(this.cb90);
             this.Controls.Add(this.lblDrugoPitanje);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(822, 589);
             this.MinimizeBox = false;

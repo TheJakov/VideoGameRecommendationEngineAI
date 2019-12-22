@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forme\CetrnaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\CetrnaestoPitanje.Designer.cs">
+      <DependentUpon>CetrnaestoPitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\CetvrtoPitanje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,9 +130,18 @@
     <Compile Include="Forme\TrecePitanje.Designer.cs">
       <DependentUpon>TrecePitanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\TrinaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\TrinaestoPitanje.Designer.cs">
+      <DependentUpon>TrinaestoPitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\CetrnaestoPitanje.resx">
+      <DependentUpon>CetrnaestoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\CetvrtoPitanje.resx">
       <DependentUpon>CetvrtoPitanje.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\TrecePitanje.resx">
       <DependentUpon>TrecePitanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\TrinaestoPitanje.resx">
+      <DependentUpon>TrinaestoPitanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
