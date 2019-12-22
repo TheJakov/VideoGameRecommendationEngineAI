@@ -154,9 +154,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 421);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 25);
+            this.label1.Size = new System.Drawing.Size(298, 25);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Moguće označiti max 2 opcije. ";
+            this.label1.Text = "Moguće je označiti max 2 opcije. ";
             // 
             // PrvoPitanje
             // 
