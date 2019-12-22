@@ -70,7 +70,7 @@
             this.lblBrojPitanja.Name = "lblBrojPitanja";
             this.lblBrojPitanja.Size = new System.Drawing.Size(71, 29);
             this.lblBrojPitanja.TabIndex = 5;
-            this.lblBrojPitanja.Text = "1 / 16";
+            this.lblBrojPitanja.Text = "1 / 17";
             // 
             // btnSljedece
             // 
@@ -182,7 +182,8 @@
             this.MinimumSize = new System.Drawing.Size(822, 589);
             this.Name = "PrvoPitanje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrvoPitanje";
+            this.Text = "Tip igre";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

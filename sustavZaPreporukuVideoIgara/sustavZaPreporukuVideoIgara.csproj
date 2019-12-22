@@ -64,6 +64,12 @@
     <Compile Include="Forme\PrvoPitanje.Designer.cs">
       <DependentUpon>PrvoPitanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\TrecePitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\TrecePitanje.Designer.cs">
+      <DependentUpon>TrecePitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\PrvoPitanje.resx">
       <DependentUpon>PrvoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\TrecePitanje.resx">
+      <DependentUpon>TrecePitanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

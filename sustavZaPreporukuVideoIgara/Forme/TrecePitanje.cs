@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sustavZaPreporukuVideoIgara.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using sustavZaPreporukuVideoIgara.Forme;
-using sustavZaPreporukuVideoIgara.Helpers;
 
 namespace sustavZaPreporukuVideoIgara.Forme
 {
-    public partial class DrugoPitanje : Form
+    public partial class TrecePitanje : Form
     {
-        public DrugoPitanje()
+        public TrecePitanje()
         {
             InitializeComponent();
         }
@@ -27,8 +26,7 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            TrecePitanje trecePitanje = new TrecePitanje();
-            NavigationHelper.IdiNaFormu(this, trecePitanje);
+
         }
     }
 }
