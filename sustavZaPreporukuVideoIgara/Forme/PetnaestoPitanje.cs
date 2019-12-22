@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace sustavZaPreporukuVideoIgara.Forme
 {
-    public partial class CetrnaestoPitanje : Form
+    public partial class PetnaestoPitanje : Form
     {
-        public CetrnaestoPitanje()
+        public PetnaestoPitanje()
         {
             InitializeComponent();
         }
@@ -23,10 +23,11 @@ namespace sustavZaPreporukuVideoIgara.Forme
             Form1 pocetnaForma = new Form1();
             NavigationHelper.IdiNaFormu(this, pocetnaForma);
         }
+
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            PetnaestoPitanje petnaestoPitanje = new PetnaestoPitanje();
-            NavigationHelper.IdiNaFormu(this, petnaestoPitanje);
+            SesnaestoPitanje sesnaestoPitanje = new SesnaestoPitanje();
+            NavigationHelper.IdiNaFormu(this, sesnaestoPitanje);
         }
     }
 }

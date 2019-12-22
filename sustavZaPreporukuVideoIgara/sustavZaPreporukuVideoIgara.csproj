@@ -100,6 +100,12 @@
     <Compile Include="Forme\OsmoPitanje.Designer.cs">
       <DependentUpon>OsmoPitanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\PetnaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PetnaestoPitanje.Designer.cs">
+      <DependentUpon>PetnaestoPitanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\PetoPitanje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="Forme\SedmoPitanje.Designer.cs">
       <DependentUpon>SedmoPitanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\SesnaestoPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\SesnaestoPitanje.Designer.cs">
+      <DependentUpon>SesnaestoPitanje.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\SestoPitanje.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,9 @@
     <EmbeddedResource Include="Forme\OsmoPitanje.resx">
       <DependentUpon>OsmoPitanje.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PetnaestoPitanje.resx">
+      <DependentUpon>PetnaestoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\PetoPitanje.resx">
       <DependentUpon>PetoPitanje.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\SedmoPitanje.resx">
       <DependentUpon>SedmoPitanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SesnaestoPitanje.resx">
+      <DependentUpon>SesnaestoPitanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\SestoPitanje.resx">
       <DependentUpon>SestoPitanje.cs</DependentUpon>
