@@ -19,7 +19,8 @@ namespace sustavZaPreporukuVideoIgara.Helpers
 
             EvaluationModel.Price = null;
             EvaluationModel.IGNRating = null;
-            EvaluationModel.CampaignDuration = null;
+            EvaluationModel.CampaignDurationMin = null;
+            EvaluationModel.CampaignDurationMax = null;
 
             EvaluationModel.KoefPopular = null;
             EvaluationModel.KoefCustomization = null;

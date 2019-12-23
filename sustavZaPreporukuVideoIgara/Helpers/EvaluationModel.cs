@@ -25,9 +25,16 @@ namespace sustavZaPreporukuVideoIgara.Helpers
         /// </summary>
         public static int? Price;
 
+        /// <summary>
+        /// Rating needs to be above or equal this marginal rating.
+        /// </summary>
         public static int? IGNRating;
 
-        public static int? CampaignDuration;
+        /// <summary>
+        /// Rating needs to be between these two marginal ratings.
+        /// </summary>
+        public static int? CampaignDurationMin;
+        public static int? CampaignDurationMax;
 
         /// <summary>
         /// Vrijednost od 1-3. Svejedno = 1, Važno = 2, Vrlo važno = 3.

@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            DevetoPitanje devetoPitanje = new DevetoPitanje();
-            NavigationHelper.IdiNaFormu(this, devetoPitanje);
+            if (!IspravnoOdabranoOsmoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                DevetoPitanje devetoPitanje = new DevetoPitanje();
+                NavigationHelper.IdiNaFormu(this, devetoPitanje);
+            }
         }
 
         private void cbHorror_CheckedChanged(object sender, EventArgs e)
@@ -101,6 +110,14 @@ namespace sustavZaPreporukuVideoIgara.Forme
                 cbDriving.Checked = false;
             }
         }
+        private void cbAction_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraMaxDvaOsmoPitanje())
+            {
+                PozoviMB();
+                cbAction.Checked = false;
+            }
+        }
         private bool ProvjeraMaxDvaOsmoPitanje()
         {
             int brojChecked = 0;
@@ -120,6 +137,8 @@ namespace sustavZaPreporukuVideoIgara.Forme
                 brojChecked++;
             if (cbDriving.Checked)
                 brojChecked++;
+            if (cbAction.Checked)
+                brojChecked++;
 
             if (brojChecked <= 2)
                 return true;
@@ -131,6 +150,56 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti najviše dvije opcije!", "Ooops!",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoOsmoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbHorror.Checked)
+                brojChecked++;
+            if (cbWar.Checked)
+                brojChecked++;
+            if (cbCrime.Checked)
+                brojChecked++;
+            if (cbApocalyptic.Checked)
+                brojChecked++;
+            if (cbSpace.Checked)
+                brojChecked++;
+            if (cbAdventure.Checked)
+                brojChecked++;
+            if (cbSport.Checked)
+                brojChecked++;
+            if (cbDriving.Checked)
+                brojChecked++;
+            if (cbAction.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1 || brojChecked == 2)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbHorror.Checked)
+                EvaluationModel.ListOfGenres.Add("horror");
+            if (cbWar.Checked)
+                EvaluationModel.ListOfGenres.Add("war");
+            if (cbCrime.Checked)
+                EvaluationModel.ListOfGenres.Add("crime");
+            if (cbApocalyptic.Checked)
+                EvaluationModel.ListOfGenres.Add("apocalyptic");
+            if (cbSpace.Checked)
+                EvaluationModel.ListOfGenres.Add("space");
+            if (cbAdventure.Checked)
+                EvaluationModel.ListOfGenres.Add("adventure");
+            if (cbSport.Checked)
+                EvaluationModel.ListOfGenres.Add("sport");
+            if (cbDriving.Checked)
+                EvaluationModel.ListOfGenres.Add("driving");
+            if(cbAction.Checked)
+                EvaluationModel.ListOfGenres.Add("action");
         }
     }
 }

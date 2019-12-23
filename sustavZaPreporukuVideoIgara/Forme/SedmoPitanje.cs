@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            OsmoPitanje osmoPitanje = new OsmoPitanje();
-            NavigationHelper.IdiNaFormu(this, osmoPitanje);
+            if (!IspravnoOdabranoSedmoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                OsmoPitanje osmoPitanje = new OsmoPitanje();
+                NavigationHelper.IdiNaFormu(this, osmoPitanje);
+            }
         }
 
         private void cbDo5_CheckedChanged(object sender, EventArgs e)
@@ -87,6 +96,48 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoSedmoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbDo5.Checked)
+                brojChecked++;
+            if (cb5_10.Checked)
+                brojChecked++;
+            if (cb10_20.Checked)
+                brojChecked++;
+            if (cbPreko20.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbDo5.Checked)
+            {
+                EvaluationModel.CampaignDurationMin = 1;
+                EvaluationModel.CampaignDurationMax = 25;
+            }
+            if (cb5_10.Checked)
+            {
+                EvaluationModel.CampaignDurationMin = 26;
+                EvaluationModel.CampaignDurationMax = 50;
+            }
+            if (cb10_20.Checked)
+            {
+                EvaluationModel.CampaignDurationMin = 51;
+                EvaluationModel.CampaignDurationMax = 75;
+            }
+            if (cbPreko20.Checked)
+            {
+                EvaluationModel.CampaignDurationMin = 76;
+                EvaluationModel.CampaignDurationMax = 100;
+            }
         }
     }
 }

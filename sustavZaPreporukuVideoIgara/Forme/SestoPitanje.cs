@@ -29,6 +29,7 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             if (ProvjeraUnosaSestoPitanje(korisnickiUnos))
             {
+                DodjeliVrijednostModelu();
                 SedmoPitanje sedmoPitanje = new SedmoPitanje();
                 NavigationHelper.IdiNaFormu(this, sedmoPitanje);
             }
@@ -64,6 +65,15 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Morate unjeti vrijednost između 1.0 i 10.0 !", "Ooops!",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            double rating = double.Parse(korisnickiUnos);
+            double ratingOneDecimal = Math.Round(rating, 1, MidpointRounding.AwayFromZero);
+            double ratingTo100Base = ratingOneDecimal * 10;
+            int ModelRating = Convert.ToInt32(ratingTo100Base);
+            EvaluationModel.IGNRating = ModelRating;
         }
     }
 }

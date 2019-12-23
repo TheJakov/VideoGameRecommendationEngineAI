@@ -42,6 +42,7 @@
             this.btnSljedece = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbAction = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblDrugoPitanje
@@ -58,7 +59,7 @@
             // 
             this.cbAdventure.AutoSize = true;
             this.cbAdventure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbAdventure.Location = new System.Drawing.Point(94, 323);
+            this.cbAdventure.Location = new System.Drawing.Point(326, 89);
             this.cbAdventure.Name = "cbAdventure";
             this.cbAdventure.Size = new System.Drawing.Size(124, 29);
             this.cbAdventure.TabIndex = 25;
@@ -130,7 +131,7 @@
             // 
             this.cbDriving.AutoSize = true;
             this.cbDriving.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDriving.Location = new System.Drawing.Point(94, 413);
+            this.cbDriving.Location = new System.Drawing.Point(326, 179);
             this.cbDriving.Name = "cbDriving";
             this.cbDriving.Size = new System.Drawing.Size(94, 29);
             this.cbDriving.TabIndex = 27;
@@ -142,7 +143,7 @@
             // 
             this.cbSport.AutoSize = true;
             this.cbSport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSport.Location = new System.Drawing.Point(94, 368);
+            this.cbSport.Location = new System.Drawing.Point(326, 134);
             this.cbSport.Name = "cbSport";
             this.cbSport.Size = new System.Drawing.Size(81, 29);
             this.cbSport.TabIndex = 26;
@@ -184,11 +185,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(388, 257);
+            this.label1.Location = new System.Drawing.Point(42, 348);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 25);
             this.label1.TabIndex = 33;
             this.label1.Text = "Moguće je označiti max 2 opcije. ";
+            // 
+            // cbAction
+            // 
+            this.cbAction.AutoSize = true;
+            this.cbAction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAction.Location = new System.Drawing.Point(326, 228);
+            this.cbAction.Name = "cbAction";
+            this.cbAction.Size = new System.Drawing.Size(89, 29);
+            this.cbAction.TabIndex = 34;
+            this.cbAction.Text = "Action";
+            this.cbAction.UseVisualStyleBackColor = true;
+            this.cbAction.CheckedChanged += new System.EventHandler(this.cbAction_CheckedChanged);
             // 
             // OsmoPitanje
             // 
@@ -196,6 +209,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 542);
+            this.Controls.Add(this.cbAction);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSljedece);
             this.Controls.Add(this.btnOdustani);
@@ -237,5 +251,6 @@
         private System.Windows.Forms.Button btnSljedece;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbAction;
     }
 }
