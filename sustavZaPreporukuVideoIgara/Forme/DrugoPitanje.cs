@@ -27,8 +27,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            TrecePitanje trecePitanje = new TrecePitanje();
-            NavigationHelper.IdiNaFormu(this, trecePitanje);
+            if (!IspravnoOdabranoDrugoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                TrecePitanje trecePitanje = new TrecePitanje();
+                NavigationHelper.IdiNaFormu(this, trecePitanje);
+            }
         }
 
         private void cbEveryone_CheckedChanged(object sender, EventArgs e)
@@ -87,6 +96,36 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoDrugoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbEveryone.Checked)
+                brojChecked++;
+            if (cbTeen.Checked)
+                brojChecked++;
+            if (cbMature.Checked)
+                brojChecked++;
+            if (cbAdults.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbEveryone.Checked)
+                EvaluationModel.ESRB = "everyone";
+            if (cbTeen.Checked)
+                EvaluationModel.ESRB = "teen";
+            if (cbMature.Checked)
+                EvaluationModel.ESRB = "mature";
+            if (cbAdults.Checked)
+                EvaluationModel.ESRB = "adults";
         }
     }
 }

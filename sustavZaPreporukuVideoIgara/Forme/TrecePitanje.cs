@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            CetvrtoPitanje cetvrtoPitanje = new CetvrtoPitanje();
-            NavigationHelper.IdiNaFormu(this, cetvrtoPitanje);
+            if (!IspravnoOdabranoTrecePitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                CetvrtoPitanje cetvrtoPitanje = new CetvrtoPitanje();
+                NavigationHelper.IdiNaFormu(this, cetvrtoPitanje);
+            }
         }
 
         private void cbPc_CheckedChanged(object sender, EventArgs e)
@@ -86,6 +95,36 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoTrecePitanje()
+        {
+            int brojChecked = 0;
+            if (cbPc.Checked)
+                brojChecked++;
+            if (cbPlaystation.Checked)
+                brojChecked++;
+            if (cbXbox.Checked)
+                brojChecked++;
+            if (cbNintendo.Checked)
+                brojChecked++;
+
+            if (brojChecked <= 1)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbPc.Checked)
+                EvaluationModel.Platform = "PC";
+            if (cbPlaystation.Checked)
+                EvaluationModel.Platform = "PS";
+            if (cbXbox.Checked)
+                EvaluationModel.Platform = "XBOX";
+            if (cbNintendo.Checked)
+                EvaluationModel.Platform = "Nintendo";
         }
     }
 }

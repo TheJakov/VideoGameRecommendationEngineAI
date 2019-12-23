@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            PetoPitanje petoPitanje = new PetoPitanje();
-            NavigationHelper.IdiNaFormu(this, petoPitanje);
+            if (!IspravnoOdabranoCetvrtoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                PetoPitanje petoPitanje = new PetoPitanje();
+                NavigationHelper.IdiNaFormu(this, petoPitanje);
+            }
         }
 
         private void cbSp_CheckedChanged(object sender, EventArgs e)
@@ -43,6 +52,40 @@ namespace sustavZaPreporukuVideoIgara.Forme
         private void cbCoop_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private bool IspravnoOdabranoCetvrtoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbSp.Checked)
+                brojChecked++;
+            if (cbMp.Checked)
+                brojChecked++;
+            if (cbCoop.Checked)
+                brojChecked++;
+
+            if (brojChecked != 0)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbSp.Checked)
+                EvaluationModel.Singleplayer = true;
+            else
+                EvaluationModel.Singleplayer = false;
+
+            if (cbMp.Checked)
+                EvaluationModel.Multiplayer = true;
+            else
+                EvaluationModel.Multiplayer = false;
+
+            if (cbCoop.Checked)
+                EvaluationModel.Coop = true;
+            else
+                EvaluationModel.Coop = false;
         }
     }
 }

@@ -35,11 +35,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            //ovdje ce se ukoliko je sve u redu, a provjere osiguravaju da je trenutno,
-            //dodat vrijednosti statickoj klasi koja ce sadrzavati personnalizirani objekt koeficijenata
-            //Jakov ce to rijesit
-            DrugoPitanje drugoPitanje = new DrugoPitanje();
-            NavigationHelper.IdiNaFormu(this, drugoPitanje);
+            if (!IspravnoOdabranoPrvoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                DrugoPitanje drugoPitanje = new DrugoPitanje();
+                NavigationHelper.IdiNaFormu(this, drugoPitanje);
+            }
         }
 
         private void cbShooter_CheckedChanged(object sender, EventArgs e)
@@ -127,6 +133,48 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti najviše dvije opcije!", "Ooops!", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoPrvoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbShooter.Checked)
+                brojChecked++;
+            if (cbRpg.Checked)
+                brojChecked++;
+            if (cbMoba.Checked)
+                brojChecked++;
+            if (cbSimulation.Checked)
+                brojChecked++;
+            if (cbBattleRoyale.Checked)
+                brojChecked++;
+            if (cbPlatformer.Checked)
+                brojChecked++;
+            if (cbHacknSlash.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1 || brojChecked == 2)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbShooter.Checked)
+                EvaluationModel.ListOfTypes.Add("shooter");
+            if (cbRpg.Checked)
+                EvaluationModel.ListOfTypes.Add("rpg");
+            if (cbMoba.Checked)
+                EvaluationModel.ListOfTypes.Add("moba");
+            if (cbSimulation.Checked)
+                EvaluationModel.ListOfTypes.Add("simulation");
+            if (cbBattleRoyale.Checked)
+                EvaluationModel.ListOfTypes.Add("battle royale");
+            if (cbPlatformer.Checked)
+                EvaluationModel.ListOfTypes.Add("platformer");
+            if (cbHacknSlash.Checked)
+                EvaluationModel.ListOfTypes.Add("hack_and_slash");
         }
        
     }

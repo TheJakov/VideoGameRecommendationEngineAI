@@ -20,6 +20,9 @@ namespace sustavZaPreporukuVideoIgara.Helpers
         public static bool? Multiplayer;
         public static bool? Coop;
 
+        /// <summary>
+        /// Price needs to be above or equal this marginal rating.
+        /// </summary>
         public static int? Price;
 
         public static int? IGNRating;

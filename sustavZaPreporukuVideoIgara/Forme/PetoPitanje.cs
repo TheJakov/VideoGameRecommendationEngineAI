@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            SestoPitanje sestoPitanje = new SestoPitanje();
-            NavigationHelper.IdiNaFormu(this, sestoPitanje);
+            if (!IspravnoOdabranoPetoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                SestoPitanje sestoPitanje = new SestoPitanje();
+                NavigationHelper.IdiNaFormu(this, sestoPitanje);
+            }
         }
 
         private void cbBesplatna_CheckedChanged(object sender, EventArgs e)
@@ -97,6 +106,40 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private bool IspravnoOdabranoPetoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbBesplatna.Checked)
+                brojChecked++;
+            if (cb100kn.Checked)
+                brojChecked++;
+            if (cb200kn.Checked)
+                brojChecked++;
+            if (cb350kn.Checked)
+                brojChecked++;
+            if (cbPreko350kn.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1)
+                return true;
+            else
+                return false;
+        }
+
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbBesplatna.Checked)
+                EvaluationModel.Price = 100;
+            if (cb100kn.Checked)
+                EvaluationModel.Price = 80;
+            if (cb200kn.Checked)
+                EvaluationModel.Price = 60;
+            if (cb350kn.Checked)
+                EvaluationModel.Price = 40;
+            if (cbPreko350kn.Checked)
+                EvaluationModel.Price = 1;
         }
     }
 }
