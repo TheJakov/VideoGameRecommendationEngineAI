@@ -40,6 +40,7 @@
             this.cbPlatformer = new System.Windows.Forms.CheckBox();
             this.cbBattleRoyale = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbHacknSlash = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnOdustani
@@ -86,67 +87,73 @@
             // 
             this.cbShooter.AutoSize = true;
             this.cbShooter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbShooter.Location = new System.Drawing.Point(119, 115);
+            this.cbShooter.Location = new System.Drawing.Point(111, 96);
             this.cbShooter.Name = "cbShooter";
             this.cbShooter.Size = new System.Drawing.Size(103, 29);
             this.cbShooter.TabIndex = 7;
             this.cbShooter.Text = "Shooter";
             this.cbShooter.UseVisualStyleBackColor = true;
+            this.cbShooter.CheckedChanged += new System.EventHandler(this.cbShooter_CheckedChanged);
             // 
             // cbRpg
             // 
             this.cbRpg.AutoSize = true;
             this.cbRpg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRpg.Location = new System.Drawing.Point(119, 164);
+            this.cbRpg.Location = new System.Drawing.Point(111, 145);
             this.cbRpg.Name = "cbRpg";
             this.cbRpg.Size = new System.Drawing.Size(75, 29);
             this.cbRpg.TabIndex = 8;
             this.cbRpg.Text = "RPG";
             this.cbRpg.UseVisualStyleBackColor = true;
+            this.cbRpg.CheckedChanged += new System.EventHandler(this.cbRpg_CheckedChanged);
             // 
             // cbSimulation
             // 
             this.cbSimulation.AutoSize = true;
             this.cbSimulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSimulation.Location = new System.Drawing.Point(119, 262);
+            this.cbSimulation.Location = new System.Drawing.Point(111, 243);
             this.cbSimulation.Name = "cbSimulation";
             this.cbSimulation.Size = new System.Drawing.Size(125, 29);
             this.cbSimulation.TabIndex = 10;
             this.cbSimulation.Text = "Simulation";
             this.cbSimulation.UseVisualStyleBackColor = true;
+            this.cbSimulation.CheckedChanged += new System.EventHandler(this.cbSimulation_CheckedChanged);
             // 
             // cbMoba
             // 
             this.cbMoba.AutoSize = true;
             this.cbMoba.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMoba.Location = new System.Drawing.Point(119, 211);
+            this.cbMoba.Location = new System.Drawing.Point(111, 192);
             this.cbMoba.Name = "cbMoba";
             this.cbMoba.Size = new System.Drawing.Size(94, 29);
             this.cbMoba.TabIndex = 9;
             this.cbMoba.Text = "MOBA";
             this.cbMoba.UseVisualStyleBackColor = true;
+            this.cbMoba.CheckedChanged += new System.EventHandler(this.cbMoba_CheckedChanged);
             // 
             // cbPlatformer
             // 
             this.cbPlatformer.AutoSize = true;
             this.cbPlatformer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPlatformer.Location = new System.Drawing.Point(119, 359);
+            this.cbPlatformer.Location = new System.Drawing.Point(111, 340);
             this.cbPlatformer.Name = "cbPlatformer";
             this.cbPlatformer.Size = new System.Drawing.Size(122, 29);
             this.cbPlatformer.TabIndex = 12;
             this.cbPlatformer.Text = "Platformer";
             this.cbPlatformer.UseVisualStyleBackColor = true;
+            this.cbPlatformer.CheckedChanged += new System.EventHandler(this.cbPlatformer_CheckedChanged);
             // 
             // cbBattleRoyale
             // 
             this.cbBattleRoyale.AutoSize = true;
             this.cbBattleRoyale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBattleRoyale.Location = new System.Drawing.Point(119, 310);
+            this.cbBattleRoyale.Location = new System.Drawing.Point(111, 291);
             this.cbBattleRoyale.Name = "cbBattleRoyale";
             this.cbBattleRoyale.Size = new System.Drawing.Size(148, 29);
             this.cbBattleRoyale.TabIndex = 11;
             this.cbBattleRoyale.Text = "Battle Royale";
             this.cbBattleRoyale.UseVisualStyleBackColor = true;
+            this.cbBattleRoyale.CheckedChanged += new System.EventHandler(this.cbBattleRoyale_CheckedChanged);
             // 
             // label1
             // 
@@ -158,12 +165,25 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Moguće je označiti max 2 opcije. ";
             // 
+            // cbHacknSlash
+            // 
+            this.cbHacknSlash.AutoSize = true;
+            this.cbHacknSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHacknSlash.Location = new System.Drawing.Point(111, 381);
+            this.cbHacknSlash.Name = "cbHacknSlash";
+            this.cbHacknSlash.Size = new System.Drawing.Size(168, 29);
+            this.cbHacknSlash.TabIndex = 14;
+            this.cbHacknSlash.Text = "Hack and slash";
+            this.cbHacknSlash.UseVisualStyleBackColor = true;
+            this.cbHacknSlash.CheckedChanged += new System.EventHandler(this.cbHacknSlash_CheckedChanged);
+            // 
             // PrvoPitanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 542);
+            this.Controls.Add(this.cbHacknSlash);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbPlatformer);
             this.Controls.Add(this.cbBattleRoyale);
@@ -202,5 +222,6 @@
         private System.Windows.Forms.CheckBox cbPlatformer;
         private System.Windows.Forms.CheckBox cbBattleRoyale;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbHacknSlash;
     }
 }
