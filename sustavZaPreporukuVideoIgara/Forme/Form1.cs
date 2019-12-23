@@ -21,6 +21,7 @@ namespace sustavZaPreporukuVideoIgara
 
         private void btnSpreman_Click(object sender, EventArgs e)
         {
+            EvaluationHelper.ResetirajModel();
             PrvoPitanje prvoPitanje = new PrvoPitanje();
             NavigationHelper.IdiNaFormu(this, prvoPitanje);
         }
