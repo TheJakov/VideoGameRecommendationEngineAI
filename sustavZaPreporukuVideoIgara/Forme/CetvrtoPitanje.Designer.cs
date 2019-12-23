@@ -59,6 +59,7 @@
             this.cbCoop.TabIndex = 20;
             this.cbCoop.Text = "Co-op";
             this.cbCoop.UseVisualStyleBackColor = true;
+            this.cbCoop.CheckedChanged += new System.EventHandler(this.cbCoop_CheckedChanged);
             // 
             // cbMp
             // 
@@ -70,6 +71,7 @@
             this.cbMp.TabIndex = 19;
             this.cbMp.Text = "Multiplayer";
             this.cbMp.UseVisualStyleBackColor = true;
+            this.cbMp.CheckedChanged += new System.EventHandler(this.cbMp_CheckedChanged);
             // 
             // cbSp
             // 
@@ -81,6 +83,7 @@
             this.cbSp.TabIndex = 18;
             this.cbSp.Text = "Singleplayer (Campaign)";
             this.cbSp.UseVisualStyleBackColor = true;
+            this.cbSp.CheckedChanged += new System.EventHandler(this.cbSp_CheckedChanged);
             // 
             // label1
             // 

@@ -125,7 +125,8 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void PozoviMB()
         {
-            MessageBox.Show("Možete označiti najviše dvije opcije!", "Ooops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Možete označiti najviše dvije opcije!", "Ooops!", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
        
     }

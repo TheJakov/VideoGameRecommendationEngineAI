@@ -61,6 +61,7 @@
             this.cbPreko350kn.TabIndex = 21;
             this.cbPreko350kn.Text = "preko 350  kn";
             this.cbPreko350kn.UseVisualStyleBackColor = true;
+            this.cbPreko350kn.CheckedChanged += new System.EventHandler(this.cbPreko350kn_CheckedChanged);
             // 
             // cb350kn
             // 
@@ -72,6 +73,7 @@
             this.cb350kn.TabIndex = 20;
             this.cb350kn.Text = "do 350 kn";
             this.cb350kn.UseVisualStyleBackColor = true;
+            this.cb350kn.CheckedChanged += new System.EventHandler(this.cb350kn_CheckedChanged);
             // 
             // cb200kn
             // 
@@ -83,6 +85,7 @@
             this.cb200kn.TabIndex = 19;
             this.cb200kn.Text = "do 200 kn";
             this.cb200kn.UseVisualStyleBackColor = true;
+            this.cb200kn.CheckedChanged += new System.EventHandler(this.cb200kn_CheckedChanged);
             // 
             // cb100kn
             // 
@@ -94,6 +97,7 @@
             this.cb100kn.TabIndex = 18;
             this.cb100kn.Text = "do 100 kn";
             this.cb100kn.UseVisualStyleBackColor = true;
+            this.cb100kn.CheckedChanged += new System.EventHandler(this.cb100kn_CheckedChanged);
             // 
             // cbBesplatna
             // 
@@ -105,6 +109,7 @@
             this.cbBesplatna.TabIndex = 17;
             this.cbBesplatna.Text = "Besplatna (free to play)";
             this.cbBesplatna.UseVisualStyleBackColor = true;
+            this.cbBesplatna.CheckedChanged += new System.EventHandler(this.cbBesplatna_CheckedChanged);
             // 
             // label1
             // 

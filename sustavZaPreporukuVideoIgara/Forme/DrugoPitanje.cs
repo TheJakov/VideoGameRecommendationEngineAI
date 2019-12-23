@@ -30,5 +30,63 @@ namespace sustavZaPreporukuVideoIgara.Forme
             TrecePitanje trecePitanje = new TrecePitanje();
             NavigationHelper.IdiNaFormu(this, trecePitanje);
         }
+
+        private void cbEveryone_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaDrugoPitanje())
+            {
+                PozoviMB();
+                cbEveryone.Checked = false;
+            }
+        }
+
+        private void cbTeen_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaDrugoPitanje())
+            {
+                PozoviMB();
+                cbTeen.Checked = false;
+            }
+        }
+
+        private void cbMature_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaDrugoPitanje())
+            {
+                PozoviMB();
+                cbMature.Checked = false;
+            }
+        }
+
+        private void cbAdults_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaDrugoPitanje())
+            {
+                PozoviMB();
+                cbAdults.Checked = false;
+            }
+        }
+        private bool ProvjeraJednaOpcijaDrugoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbEveryone.Checked)
+                brojChecked++;
+            if (cbTeen.Checked)
+                brojChecked++;
+            if (cbMature.Checked)
+                brojChecked++;
+            if (cbAdults.Checked)
+                brojChecked++;
+
+            if (brojChecked <= 1)
+                return true;
+            else
+                return false;
+        }
+        private void PozoviMB()
+        {
+            MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

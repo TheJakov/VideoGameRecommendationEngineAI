@@ -90,6 +90,7 @@
             this.cbNintendo.TabIndex = 18;
             this.cbNintendo.Text = "Nintendo";
             this.cbNintendo.UseVisualStyleBackColor = true;
+            this.cbNintendo.CheckedChanged += new System.EventHandler(this.cbNintendo_CheckedChanged);
             // 
             // cbXbox
             // 
@@ -101,6 +102,7 @@
             this.cbXbox.TabIndex = 17;
             this.cbXbox.Text = "Xbox";
             this.cbXbox.UseVisualStyleBackColor = true;
+            this.cbXbox.CheckedChanged += new System.EventHandler(this.cbXbox_CheckedChanged);
             // 
             // cbPlaystation
             // 
@@ -112,6 +114,7 @@
             this.cbPlaystation.TabIndex = 16;
             this.cbPlaystation.Text = "Playstation";
             this.cbPlaystation.UseVisualStyleBackColor = true;
+            this.cbPlaystation.CheckedChanged += new System.EventHandler(this.cbPlaystation_CheckedChanged);
             // 
             // cbPc
             // 
@@ -123,6 +126,7 @@
             this.cbPc.TabIndex = 15;
             this.cbPc.Text = "PC";
             this.cbPc.UseVisualStyleBackColor = true;
+            this.cbPc.CheckedChanged += new System.EventHandler(this.cbPc_CheckedChanged);
             // 
             // label1
             // 

@@ -29,5 +29,63 @@ namespace sustavZaPreporukuVideoIgara.Forme
             CetvrtoPitanje cetvrtoPitanje = new CetvrtoPitanje();
             NavigationHelper.IdiNaFormu(this, cetvrtoPitanje);
         }
+
+        private void cbPc_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaTrecePitanje())
+            {
+                PozoviMB();
+                cbPc.Checked = false;
+            }
+        }
+
+        private void cbPlaystation_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaTrecePitanje())
+            {
+                PozoviMB();
+                cbPlaystation.Checked = false;
+            }
+        }
+
+        private void cbXbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaTrecePitanje())
+            {
+                PozoviMB();
+                cbXbox.Checked = false;
+            }
+        }
+
+        private void cbNintendo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaTrecePitanje())
+            {
+                PozoviMB();
+                cbNintendo.Checked = false;
+            }
+        }
+        private bool ProvjeraJednaOpcijaTrecePitanje()
+        {
+            int brojChecked = 0;
+            if (cbPc.Checked)
+                brojChecked++;
+            if (cbPlaystation.Checked)
+                brojChecked++;
+            if (cbXbox.Checked)
+                brojChecked++;
+            if (cbNintendo.Checked)
+                brojChecked++;
+
+            if (brojChecked <= 1)
+                return true;
+            else
+                return false;
+        }
+        private void PozoviMB()
+        {
+            MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

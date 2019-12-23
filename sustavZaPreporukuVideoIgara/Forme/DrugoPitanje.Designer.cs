@@ -90,6 +90,7 @@
             this.cbAdults.TabIndex = 14;
             this.cbAdults.Text = "Adults";
             this.cbAdults.UseVisualStyleBackColor = true;
+            this.cbAdults.CheckedChanged += new System.EventHandler(this.cbAdults_CheckedChanged);
             // 
             // cbMature
             // 
@@ -101,6 +102,7 @@
             this.cbMature.TabIndex = 13;
             this.cbMature.Text = "Mature";
             this.cbMature.UseVisualStyleBackColor = true;
+            this.cbMature.CheckedChanged += new System.EventHandler(this.cbMature_CheckedChanged);
             // 
             // cbTeen
             // 
@@ -112,6 +114,7 @@
             this.cbTeen.TabIndex = 12;
             this.cbTeen.Text = "Teen";
             this.cbTeen.UseVisualStyleBackColor = true;
+            this.cbTeen.CheckedChanged += new System.EventHandler(this.cbTeen_CheckedChanged);
             // 
             // cbEveryone
             // 
@@ -123,6 +126,7 @@
             this.cbEveryone.TabIndex = 11;
             this.cbEveryone.Text = "Everyone";
             this.cbEveryone.UseVisualStyleBackColor = true;
+            this.cbEveryone.CheckedChanged += new System.EventHandler(this.cbEveryone_CheckedChanged);
             // 
             // label1
             // 

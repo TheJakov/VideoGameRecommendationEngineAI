@@ -55,6 +55,7 @@
             this.textBoxIGNRejting.Name = "textBoxIGNRejting";
             this.textBoxIGNRejting.Size = new System.Drawing.Size(100, 30);
             this.textBoxIGNRejting.TabIndex = 18;
+            this.textBoxIGNRejting.TextChanged += new System.EventHandler(this.textBoxIGNRejting_TextChanged);
             // 
             // label1
             // 
@@ -62,9 +63,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 203);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 25);
+            this.label1.Size = new System.Drawing.Size(615, 25);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Morate upisati decimalnu vrijednost, od 1,0 do 10.";
+            this.label1.Text = "Morate upisati decimalnu vrijednost, koja je u intervalu od 1.0 do 10.0 .";
             // 
             // label2
             // 

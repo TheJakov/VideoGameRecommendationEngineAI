@@ -29,5 +29,20 @@ namespace sustavZaPreporukuVideoIgara.Forme
             PetoPitanje petoPitanje = new PetoPitanje();
             NavigationHelper.IdiNaFormu(this, petoPitanje);
         }
+
+        private void cbSp_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbMp_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbCoop_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
