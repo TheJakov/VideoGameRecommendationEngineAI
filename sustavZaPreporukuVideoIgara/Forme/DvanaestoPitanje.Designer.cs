@@ -59,6 +59,7 @@
             this.cb2010.TabIndex = 35;
             this.cb2010.Text = "Nakon 2010  (2010-2019)";
             this.cb2010.UseVisualStyleBackColor = true;
+            this.cb2010.CheckedChanged += new System.EventHandler(this.cb2010_CheckedChanged);
             // 
             // cb2000
             // 
@@ -70,6 +71,7 @@
             this.cb2000.TabIndex = 34;
             this.cb2000.Text = "Dvijetisućite (2000-2009)";
             this.cb2000.UseVisualStyleBackColor = true;
+            this.cb2000.CheckedChanged += new System.EventHandler(this.cb2000_CheckedChanged);
             // 
             // cb90
             // 
@@ -81,6 +83,7 @@
             this.cb90.TabIndex = 33;
             this.cb90.Text = "Devedesete (90-e)";
             this.cb90.UseVisualStyleBackColor = true;
+            this.cb90.CheckedChanged += new System.EventHandler(this.cb90_CheckedChanged);
             // 
             // label1
             // 

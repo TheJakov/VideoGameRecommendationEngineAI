@@ -69,6 +69,7 @@
             this.cbJakoVazno.TabIndex = 32;
             this.cbJakoVazno.Text = "Jako važno";
             this.cbJakoVazno.UseVisualStyleBackColor = true;
+            this.cbJakoVazno.CheckedChanged += new System.EventHandler(this.cbJakoVazno_CheckedChanged);
             // 
             // cbVazno
             // 
@@ -80,6 +81,7 @@
             this.cbVazno.TabIndex = 31;
             this.cbVazno.Text = "Važno";
             this.cbVazno.UseVisualStyleBackColor = true;
+            this.cbVazno.CheckedChanged += new System.EventHandler(this.cbVazno_CheckedChanged);
             // 
             // cbSvejedno
             // 
@@ -91,6 +93,7 @@
             this.cbSvejedno.TabIndex = 30;
             this.cbSvejedno.Text = "Svejedno";
             this.cbSvejedno.UseVisualStyleBackColor = true;
+            this.cbSvejedno.CheckedChanged += new System.EventHandler(this.cbSvejedno_CheckedChanged);
             // 
             // lblBrojPitanja
             // 

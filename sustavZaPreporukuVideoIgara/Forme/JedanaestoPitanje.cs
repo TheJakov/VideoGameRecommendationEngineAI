@@ -29,5 +29,53 @@ namespace sustavZaPreporukuVideoIgara.Forme
             DvanaestoPitanje dvanaestoPitanje = new DvanaestoPitanje();
             NavigationHelper.IdiNaFormu(this, dvanaestoPitanje);
         }
+
+        private void cbSvejedno_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaJedanaestoPitanje())
+            {
+                PozoviMB();
+                cbSvejedno.Checked = false;
+            }
+        }
+
+        private void cbVazno_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaJedanaestoPitanje())
+            {
+                PozoviMB();
+                cbVazno.Checked = false;
+            }
+        }
+
+        private void cbJakoVazno_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaJedanaestoPitanje())
+            {
+                PozoviMB();
+                cbJakoVazno.Checked = false;
+            }
+        }
+
+        private bool ProvjeraJednaOpcijaJedanaestoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbSvejedno.Checked)
+                brojChecked++;
+            if (cbVazno.Checked)
+                brojChecked++;
+            if (cbJakoVazno.Checked)
+                brojChecked++;
+
+            if (brojChecked <= 1)
+                return true;
+            else
+                return false;
+        }
+        private void PozoviMB()
+        {
+            MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

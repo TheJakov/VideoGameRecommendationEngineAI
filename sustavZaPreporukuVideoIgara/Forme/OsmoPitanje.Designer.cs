@@ -64,6 +64,7 @@
             this.cbAdventure.TabIndex = 25;
             this.cbAdventure.Text = "Adventure";
             this.cbAdventure.UseVisualStyleBackColor = true;
+            this.cbAdventure.CheckedChanged += new System.EventHandler(this.cbAdventure_CheckedChanged);
             // 
             // cbSpace
             // 
@@ -75,6 +76,7 @@
             this.cbSpace.TabIndex = 24;
             this.cbSpace.Text = "Space";
             this.cbSpace.UseVisualStyleBackColor = true;
+            this.cbSpace.CheckedChanged += new System.EventHandler(this.cbSpace_CheckedChanged);
             // 
             // cbApocalyptic
             // 
@@ -86,6 +88,7 @@
             this.cbApocalyptic.TabIndex = 23;
             this.cbApocalyptic.Text = "Apocalyptic";
             this.cbApocalyptic.UseVisualStyleBackColor = true;
+            this.cbApocalyptic.CheckedChanged += new System.EventHandler(this.cbApocalyptic_CheckedChanged);
             // 
             // cbCrime
             // 
@@ -97,6 +100,7 @@
             this.cbCrime.TabIndex = 22;
             this.cbCrime.Text = "Crime";
             this.cbCrime.UseVisualStyleBackColor = true;
+            this.cbCrime.CheckedChanged += new System.EventHandler(this.cbCrime_CheckedChanged);
             // 
             // cbWar
             // 
@@ -108,6 +112,7 @@
             this.cbWar.TabIndex = 21;
             this.cbWar.Text = "War";
             this.cbWar.UseVisualStyleBackColor = true;
+            this.cbWar.CheckedChanged += new System.EventHandler(this.cbWar_CheckedChanged);
             // 
             // cbHorror
             // 
@@ -119,6 +124,7 @@
             this.cbHorror.TabIndex = 20;
             this.cbHorror.Text = "Horror";
             this.cbHorror.UseVisualStyleBackColor = true;
+            this.cbHorror.CheckedChanged += new System.EventHandler(this.cbHorror_CheckedChanged);
             // 
             // cbDriving
             // 
@@ -130,6 +136,7 @@
             this.cbDriving.TabIndex = 27;
             this.cbDriving.Text = "Driving";
             this.cbDriving.UseVisualStyleBackColor = true;
+            this.cbDriving.CheckedChanged += new System.EventHandler(this.cbDriving_CheckedChanged);
             // 
             // cbSport
             // 
@@ -141,6 +148,7 @@
             this.cbSport.TabIndex = 26;
             this.cbSport.Text = "Sport";
             this.cbSport.UseVisualStyleBackColor = true;
+            this.cbSport.CheckedChanged += new System.EventHandler(this.cbSport_CheckedChanged);
             // 
             // lblBrojPitanja
             // 
