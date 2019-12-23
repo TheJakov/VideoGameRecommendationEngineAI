@@ -60,6 +60,7 @@
             this.cbPreko20.TabIndex = 24;
             this.cbPreko20.Text = "više od 20 sati";
             this.cbPreko20.UseVisualStyleBackColor = true;
+            this.cbPreko20.CheckedChanged += new System.EventHandler(this.cbPreko20_CheckedChanged);
             // 
             // cb10_20
             // 
@@ -71,6 +72,7 @@
             this.cb10_20.TabIndex = 23;
             this.cb10_20.Text = "između 10 i 20 sati";
             this.cb10_20.UseVisualStyleBackColor = true;
+            this.cb10_20.CheckedChanged += new System.EventHandler(this.cb10_20_CheckedChanged);
             // 
             // cb5_10
             // 
@@ -82,6 +84,7 @@
             this.cb5_10.TabIndex = 22;
             this.cb5_10.Text = "između 5 i 10 sati";
             this.cb5_10.UseVisualStyleBackColor = true;
+            this.cb5_10.CheckedChanged += new System.EventHandler(this.cb5_10_CheckedChanged);
             // 
             // cbDo5
             // 
@@ -93,6 +96,7 @@
             this.cbDo5.TabIndex = 21;
             this.cbDo5.Text = "do 5 sati";
             this.cbDo5.UseVisualStyleBackColor = true;
+            this.cbDo5.CheckedChanged += new System.EventHandler(this.cbDo5_CheckedChanged);
             // 
             // label1
             // 

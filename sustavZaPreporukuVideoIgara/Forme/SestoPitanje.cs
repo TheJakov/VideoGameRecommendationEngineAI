@@ -40,6 +40,10 @@ namespace sustavZaPreporukuVideoIgara.Forme
         private void textBoxIGNRejting_TextChanged(object sender, EventArgs e)
         {
             korisnickiUnos = textBoxIGNRejting.Text;
+            if (korisnickiUnos.Contains(","))
+                MessageBox.Show("Koristite točku kod unosa decimalnog broja," +
+                    "umjesto da koristite zarez.", "Savjet",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private bool ProvjeraUnosaSestoPitanje(string korUnos)
