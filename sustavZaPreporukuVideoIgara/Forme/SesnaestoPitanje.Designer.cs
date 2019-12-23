@@ -58,6 +58,7 @@
             this.cbNe.TabIndex = 38;
             this.cbNe.Text = "Ne";
             this.cbNe.UseVisualStyleBackColor = true;
+            this.cbNe.CheckedChanged += new System.EventHandler(this.cbNe_CheckedChanged);
             // 
             // cbDa
             // 
@@ -69,6 +70,7 @@
             this.cbDa.TabIndex = 37;
             this.cbDa.Text = "Da";
             this.cbDa.UseVisualStyleBackColor = true;
+            this.cbDa.CheckedChanged += new System.EventHandler(this.cbDa_CheckedChanged);
             // 
             // label1
             // 

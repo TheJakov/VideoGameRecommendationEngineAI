@@ -29,5 +29,41 @@ namespace sustavZaPreporukuVideoIgara.Forme
             Rezultat rezultatForma = new Rezultat();
             NavigationHelper.IdiNaFormu(this, rezultatForma);
         }
+
+        private void cbDa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaSesnaestoPitanje())
+            {
+                PozoviMB();
+                cbDa.Checked = false;
+            }
+        }
+
+        private void cbNe_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!ProvjeraJednaOpcijaSesnaestoPitanje())
+            {
+                PozoviMB();
+                cbNe.Checked = false;
+            }
+        }
+        private bool ProvjeraJednaOpcijaSesnaestoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbNe.Checked)
+                brojChecked++;
+            if (cbDa.Checked)
+                brojChecked++;
+
+            if (brojChecked <= 1)
+                return true;
+            else
+                return false;
+        }
+        private void PozoviMB()
+        {
+            MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
