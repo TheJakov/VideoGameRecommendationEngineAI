@@ -26,8 +26,17 @@ namespace sustavZaPreporukuVideoIgara.Forme
 
         private void btnSljedece_Click(object sender, EventArgs e)
         {
-            DvanaestoPitanje dvanaestoPitanje = new DvanaestoPitanje();
-            NavigationHelper.IdiNaFormu(this, dvanaestoPitanje);
+            if (!IspravnoOdabranoJedanaestoPitanje())
+            {
+                MessageBox.Show("Niste odabrali niti jednu opciju.", "Oops!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DodjeliVrijednostModelu();
+                DvanaestoPitanje dvanaestoPitanje = new DvanaestoPitanje();
+                NavigationHelper.IdiNaFormu(this, dvanaestoPitanje);
+            }
         }
 
         private void cbSvejedno_CheckedChanged(object sender, EventArgs e)
@@ -76,6 +85,30 @@ namespace sustavZaPreporukuVideoIgara.Forme
         {
             MessageBox.Show("Možete označiti samo jednu opciju!", "Ooops!",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private bool IspravnoOdabranoJedanaestoPitanje()
+        {
+            int brojChecked = 0;
+            if (cbSvejedno.Checked)
+                brojChecked++;
+            if (cbVazno.Checked)
+                brojChecked++;
+            if (cbJakoVazno.Checked)
+                brojChecked++;
+
+            if (brojChecked == 1)
+                return true;
+            else
+                return false;
+        }
+        private void DodjeliVrijednostModelu()
+        {
+            if (cbSvejedno.Checked)
+                EvaluationModel.KoefGraphicsQuality = 1;
+            if (cbVazno.Checked)
+                EvaluationModel.KoefGraphicsQuality = 2;
+            if (cbJakoVazno.Checked)
+                EvaluationModel.KoefGraphicsQuality = 3;
         }
     }
 }
