@@ -235,6 +235,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\sustavZaPreporukuVideoIgaraML.Model\sustavZaPreporukuVideoIgaraML.Model.csproj">
+      <Project>{2f6c67c3-9c71-400a-8bb9-22cf9d5b9bdb}</Project>
+      <Name>sustavZaPreporukuVideoIgaraML.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
