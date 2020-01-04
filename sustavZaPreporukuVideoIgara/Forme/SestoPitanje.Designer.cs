@@ -65,7 +65,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(615, 25);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Morate upisati decimalnu vrijednost, koja je u intervalu od 1.0 do 10.0 .";
+            this.label1.Text = "Morate upisati decimalnu vrijednost, koja je u intervalu od 1,0 do 10,0 .";
             // 
             // label2
             // 

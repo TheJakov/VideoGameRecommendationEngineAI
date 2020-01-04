@@ -104,11 +104,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 542);
+            this.Controls.Add(this.lblGlavniNaslov);
             this.Controls.Add(this.btnSpreman);
             this.Controls.Add(this.lblFromGamers2);
             this.Controls.Add(this.lblFromGamers);
             this.Controls.Add(this.lblAutori);
-            this.Controls.Add(this.lblGlavniNaslov);
             this.Controls.Add(this.pictureBoxGamepad);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

@@ -1,0 +1,273 @@
+game_name_id,platform,esrb,singleplayer,multyplayer,coop,price,ign_rating,campaign_duration,is_popular,char_customization,world_size,world_diversity,graphics,period,modding,competitive,genre,type,optimization
+Fortnite,PC,teen,50,50,50,100,96,100,50,100,85,100,70,2010-sad,50,50,action,battle royale,70
+Fortnite,PS,teen,50,50,50,100,96,100,50,100,85,100,70,2010-sad,50,50,action,battle royale,70
+Fortnite,XBOX,teen,50,50,50,100,96,100,50,100,85,100,70,2010-sad,50,50,action,battle royale,70
+Fortnite,Nintendo,teen,50,50,50,100,96,100,50,100,85,100,70,2010-sad,50,50,action,battle royale,70
+Grand Theft Auto V,PC,mature,50,50,50,70,100,100,50,100,100,100,90,2010-sad,50,50,adventure,shooter,92
+Grand Theft Auto V,PS,mature,50,50,50,70,100,100,50,100,100,100,90,2010-sad,50,50,adventure,shooter,92
+Grand Theft Auto V,XBOX,mature,50,50,50,70,100,100,50,100,100,100,90,2010-sad,50,50,adventure,shooter,92
+Grand Theft Auto IV,PC,mature,50,50,0,84,100,100,0,80,85,100,80,2000s,50,0,adventure,shooter,66
+Grand Theft Auto IV,PS,mature,50,50,0,84,100,100,0,80,85,100,80,2000s,50,0,adventure,shooter,66
+Grand Theft Auto IV,XBOX,mature,50,50,0,84,100,100,0,80,85,100,80,2000s,50,0,adventure,shooter,66
+Grand Theft Auto III,PC,mature,50,0,0,86,96,100,0,40,40,70,40,2000s,50,0,adventure,shooter,89
+Grand Theft Auto III,PS,mature,50,0,0,86,96,100,0,40,40,70,40,2000s,50,0,adventure,shooter,89
+Grand Theft Auto III,XBOX,mature,50,0,0,86,96,100,0,40,40,70,40,2000s,50,0,adventure,shooter,89
+Grand Theft Auto: San Andreas,PC,adults,50,0,0,90,94,100,0,40,70,85,40,2000s,50,0,adventure,shooter,88
+Grand Theft Auto: San Andreas,PS,adults,50,0,0,90,94,100,0,40,70,85,40,2000s,50,0,adventure,shooter,88
+Grand Theft Auto: San Andreas,XBOX,adults,50,0,0,90,94,100,0,40,70,85,40,2000s,50,0,adventure,shooter,88
+Grand Theft Auto: Vice City,PC,mature,50,0,0,90,97,80,0,30,50,70,30,2000s,50,0,adventure,shooter,85
+Grand Theft Auto: Vice City,PS,mature,50,0,0,90,97,80,0,30,50,70,30,2000s,50,0,adventure,shooter,85
+Grand Theft Auto: Vice City,XBOX,mature,50,0,0,90,97,80,0,30,50,70,30,2000s,50,0,adventure,shooter,85
+Battlefield 1942,PC,teen,0,50,0,95,93,1,0,1,40,60,30,2000s,0,0,war,shooter,71
+Battlefield Vietnam,PC,teen,50,50,0,95,82,1,0,1,40,70,35,2000s,0,0,war,shooter,80
+Battlefield 2,PC,teen,50,50,0,95,89,1,0,10,55,75,40,2000s,0,0,war,shooter,90
+Battlefield 2142,PC,teen,50,50,0,95,84,1,0,15,55,70,45,2000s,50,0,war,shooter,100
+Battlefield: Bad Company,PC,teen,50,50,0,90,85,25,0,15,60,80,55,2000s,50,50,war,shooter,100
+Battlefield: Bad Company,PS,teen,50,50,0,90,85,25,0,15,60,80,55,2000s,50,50,war,shooter,100
+Battlefield: Bad Company,XBOX,teen,50,50,0,90,85,25,0,15,60,80,55,2000s,50,50,war,shooter,100
+Battlefield: Bad Company 2,PC,mature,50,50,50,80,89,40,0,20,70,80,65,2010-sad,50,50,war,shooter,96
+Battlefield: Bad Company 2,PS,mature,50,50,50,80,89,40,0,20,70,80,65,2010-sad,50,50,war,shooter,96
+Battlefield: Bad Company 2,XBOX,mature,50,50,50,80,89,40,0,20,70,80,65,2010-sad,50,50,war,shooter,96
+Battlefield 3,PC,mature,50,50,50,90,90,75,50,50,80,100,75,2010-sad,50,50,war,shooter,93
+Battlefield 3,PS,mature,50,50,50,90,90,75,50,50,80,100,75,2010-sad,50,50,war,shooter,93
+Battlefield 3,XBOX,mature,50,50,50,90,90,75,50,50,80,100,75,2010-sad,50,50,war,shooter,93
+Battlefield 4,PC,mature,50,50,50,85,80,25,50,75,85,100,80,2010-sad,0,50,war,shooter,94
+Battlefield 4,PS,mature,50,50,50,85,80,25,50,75,85,100,80,2010-sad,0,50,war,shooter,94
+Battlefield 4,XBOX,mature,50,50,50,85,80,25,50,75,85,100,80,2010-sad,0,50,war,shooter,94
+Battlefield Hardline,PC,mature,50,50,0,85,80,50,0,80,70,100,80,2010-sad,0,50,crime,shooter,88
+Battlefield Hardline,PS,mature,50,50,0,85,80,50,0,80,70,100,80,2010-sad,0,50,crime,shooter,88
+Battlefield Hardline,XBOX,mature,50,50,0,85,80,50,0,80,70,100,80,2010-sad,0,50,crime,shooter,88
+Battlefield 1,PC,mature,50,50,0,85,90,50,50,85,80,100,90,2010-sad,0,50,war,shooter,89
+Battlefield 1,PS,mature,50,50,0,85,90,50,50,85,80,100,90,2010-sad,0,50,war,shooter,89
+Battlefield 1,XBOX,mature,50,50,0,85,90,50,50,85,80,100,90,2010-sad,0,50,war,shooter,89
+Battlefield V,PC,mature,50,50,50,45,75,25,50,90,80,100,90,2010-sad,0,50,war,shooter,71
+Battlefield V,PS,mature,50,50,50,45,75,25,50,90,80,100,90,2010-sad,0,50,war,shooter,71
+Battlefield V,XBOX,mature,50,50,50,45,75,25,50,90,80,100,90,2010-sad,0,50,war,shooter,71
+Star Wars: Battlefront,PC,teen,50,50,50,55,80,50,50,70,70,100,90,2010-sad,0,50,action,shooter,88
+Star Wars: Battlefront,PS,teen,50,50,50,55,80,50,50,70,70,100,90,2010-sad,0,50,action,shooter,88
+Star Wars: Battlefront,XBOX,teen,50,50,50,55,80,50,50,70,70,100,90,2010-sad,0,50,action,shooter,88
+Star Wars: Battlefront,Nintendo,teen,50,50,50,55,80,50,50,70,70,100,90,2010-sad,0,50,action,shooter,88
+Star Wars: Battlefront II,PC,teen,50,50,50,45,65,50,50,80,80,100,100,2010-sad,0,50,action,shooter,79
+Star Wars: Battlefront II,PS,teen,50,50,50,45,65,50,50,80,80,100,100,2010-sad,0,50,action,shooter,79
+Star Wars: Battlefront II,XBOX,teen,50,50,50,45,65,50,50,80,80,100,100,2010-sad,0,50,action,shooter,79
+PlayerUnknown's Battlegrounds,PC,teen,0,50,50,70,95,1,50,90,85,100,60,2010-sad,0,50,action,battle royale,30
+PlayerUnknown's Battlegrounds,PS,teen,0,50,50,70,95,1,50,90,85,100,60,2010-sad,0,50,action,battle royale,30
+PlayerUnknown's Battlegrounds,XBOX,teen,0,50,50,70,95,1,50,90,85,100,60,2010-sad,0,50,action,battle royale,30
+Call of Duty,PC,teen,50,50,0,60,93,50,0,1,30,40,25,2000s,50,0,war,shooter,100
+Call of Duty,PS,teen,50,50,0,60,93,50,0,1,30,40,25,2000s,50,0,war,shooter,100
+Call of Duty,XBOX,teen,50,50,0,60,93,50,0,1,30,40,25,2000s,50,0,war,shooter,100
+Metro 2033,PC,mature,50,0,0,80,75,70,0,20,30,35,80,2010-sad,0,0,adventure,shooter,78
+Metro 2033,PS,mature,50,0,0,80,75,70,0,20,30,35,80,2010-sad,0,0,adventure,shooter,78
+Metro 2033,XBOX,mature,50,0,0,80,75,70,0,20,30,35,80,2010-sad,0,0,adventure,shooter,78
+Metro Last Light,PC,mature,50,0,0,80,72,74,0,20,35,40,90,2010-sad,0,0,adventure,shooter,89
+Metro Last Light,PS,mature,50,0,0,80,72,74,0,20,35,40,90,2010-sad,0,0,adventure,shooter,85
+Metro Last Light,XBOX,mature,50,0,0,80,72,74,0,20,35,40,90,2010-sad,0,0,adventure,shooter,85
+Metro Exodus,PC,mature,50,0,0,60,85,88,50,30,70,80,100,2010-sad,0,0,action,shooter,50
+Metro Exodus,PS,mature,50,0,0,60,85,88,50,30,70,80,100,2010-sad,0,0,action,shooter,70
+Metro Exodus,XBOX,mature,50,0,0,60,85,88,50,30,70,80,100,2010-sad,0,0,action,shooter,70
+Tomb Raider 1,PS,teen,50,0,0,45,93,82,0,1,35,35,5,90s,0,0,adventure,shooter,100
+Tomb Raider 2,PS,teen,50,0,0,50,80,85,0,1,40,60,5,90s,0,0,adventure,shooter,100
+Tomb Raider 3,PS,teen,50,0,0,50,80,88,0,1,45,65,5,90s,0,0,adventure,shooter,100
+Tomb Raider,PC,mature,50,50,0,90,91,70,0,75,70,85,80,2010-sad,50,0,action,shooter,95
+Tomb Raider,PS,mature,50,50,0,90,91,70,0,75,70,85,80,2010-sad,0,0,action,shooter,95
+Tomb Raider,XBOX,mature,50,50,0,90,91,70,0,75,70,85,80,2010-sad,0,0,action,shooter,95
+Rise of the Tomb Raider,PC,mature,50,0,0,70,93,80,0,80,75,90,85,2010-sad,50,0,action,shooter,85
+Rise of the Tomb Raider,PS,mature,50,0,0,70,93,80,0,80,75,90,85,2010-sad,0,0,action,shooter,90
+Rise of the Tomb Raider,XBOX,mature,50,0,0,70,93,80,0,80,75,90,85,2010-sad,0,0,action,shooter,90
+Shadow of the Tomb Raider,PC,mature,50,0,50,50,90,83,50,80,80,90,90,2010-sad,50,0,action,shooter,85
+Shadow of the Tomb Raider,PS,mature,50,0,50,50,90,83,50,80,80,90,90,2010-sad,0,0,action,shooter,90
+Shadow of the Tomb Raider,XBOX,mature,50,0,50,50,90,83,50,80,80,90,90,2010-sad,0,0,action,shooter,90
+Outlast,PC,mature,50,0,0,85,78,45,0,1,40,65,70,2010-sad,0,0,horror,shooter,90
+Outlast,PS,mature,50,0,0,85,78,45,0,1,40,65,70,2010-sad,0,0,horror,shooter,100
+Outlast,XBOX,mature,50,0,0,85,78,45,0,1,40,65,70,2010-sad,0,0,horror,shooter,100
+Outlast 2,PC,mature,50,0,0,82,83,50,50,1,50,70,75,2010-sad,0,0,horror,shooter,93
+Outlast 2,PS,mature,50,0,0,82,83,50,50,1,50,70,75,2010-sad,0,0,horror,shooter,100
+Outlast 2,XBOX,mature,50,0,0,82,83,50,50,1,50,70,75,2010-sad,0,0,horror,shooter,100
+Project CARS,PC,everyone,50,50,0,80,89,98,0,65,30,90,90,2010-sad,50,50,driving,simulation,80
+Project CARS,PS,everyone,50,50,0,80,89,98,0,65,30,90,90,2010-sad,0,50,driving,simulation,90
+Project CARS,XBOX,everyone,50,50,0,80,89,98,0,65,30,90,90,2010-sad,0,50,driving,simulation,90
+Project CARS 2,PC,everyone,50,50,50,70,92,100,50,65,30,95,100,2010-sad,50,50,driving,simulation,84
+Project CARS 2,PS,everyone,50,50,50,70,92,100,50,65,30,95,100,2010-sad,0,50,driving,simulation,90
+Project CARS 2,XBOX,everyone,50,50,50,70,92,100,50,65,30,95,100,2010-sad,0,50,driving,simulation,90
+Need for Speed: Underground,PC,everyone,50,0,0,63,88,80,50,90,80,80,30,2000s,50,0,driving,simulation,100
+Need for Speed: Underground,PS,everyone,50,0,0,63,88,80,50,90,80,80,30,2000s,0,0,driving,simulation,100
+Need for Speed: Underground,XBOX,everyone,50,0,0,63,88,80,50,90,80,80,30,2000s,0,0,driving,simulation,100
+Call of Duty 2,PC,teen,50,50,0,70,85,60,50,1,40,70,35,2000s,50,50,war,shooter,89
+Call of Duty 2,XBOX,teen,50,50,0,70,85,60,50,1,40,70,35,2000s,50,50,war,shooter,89
+Need for Speed: Underground 2,PC,everyone,50,0,50,65,91,85,50,100,85,85,35,2000s,50,0,driving,simulation,100
+Need for Speed: Underground 2,PS,everyone,50,0,50,45,91,85,50,100,85,85,35,2000s,0,0,driving,simulation,100
+Need for Speed: Underground 2,XBOX,everyone,50,0,50,45,91,85,50,100,85,85,35,2000s,0,0,driving,simulation,100
+Call of Duty 3,PC,teen,50,50,0,90,88,70,0,10,40,75,45,2000s,50,0,war,shooter,100
+Call of Duty 3,PS,teen,50,50,0,90,88,70,0,10,40,75,45,2000s,50,0,war,shooter,100
+Call of Duty 3,XBOX,teen,50,50,0,90,88,70,0,10,40,75,45,2000s,50,0,war,shooter,100
+Call of Duty 3,Nintendo,teen,50,50,0,90,88,70,0,10,40,75,45,2000s,50,0,war,shooter,100
+Need for Speed Most Wanted,PC,everyone,50,0,50,90,85,88,50,90,85,75,45,2000s,50,0,driving,simulation,100
+Need for Speed Most Wanted,PS,everyone,50,0,50,90,85,88,50,90,85,75,45,2000s,0,0,driving,simulation,100
+Need for Speed Most Wanted,XBOX,everyone,50,0,50,90,85,88,50,90,85,75,45,2000s,0,0,driving,simulation,100
+Need for Speed Most Wanted,Nintendo,everyone,50,0,50,90,85,88,50,90,85,75,45,2000s,0,0,driving,simulation,100
+Call of Duty: WWII,PC,mature,50,50,50,20,80,60,50,85,80,90,85,2010-sad,50,50,war,shooter,73
+Call of Duty: WWII,PS,mature,50,50,50,20,80,60,50,85,80,90,85,2010-sad,50,50,war,shooter,73
+Call of Duty: WWII,XBOX,mature,50,50,50,20,80,60,50,85,80,90,85,2010-sad,50,50,war,shooter,73
+Need for Speed Carbon,PC,everyone,50,0,50,95,82,85,0,100,88,78,50,2000s,50,0,driving,simulation,100
+Need for Speed Carbon,PS,everyone,50,0,50,95,82,85,0,100,88,78,50,2000s,0,0,driving,simulation,100
+Need for Speed Carbon,XBOX,everyone,50,0,50,95,82,85,0,100,88,78,50,2000s,0,0,driving,simulation,100
+Need for Speed Carbon,Nintendo,everyone,50,0,50,95,82,85,0,100,88,78,50,2000s,0,0,driving,simulation,100
+Call of Duty 4: Modern Warfare (2007),PC,mature,50,50,0,70,94,65,50,50,50,90,65,2000s,50,50,war,shooter,92
+Call of Duty 4: Modern Warfare (2007),PS,mature,50,50,0,70,94,65,50,50,50,90,65,2000s,50,50,war,shooter,92
+Call of Duty 4: Modern Warfare (2007),XBOX,mature,50,50,0,70,94,65,50,50,50,90,65,2000s,50,50,war,shooter,92
+Call of Duty 4: Modern Warfare (2007),Nintendo,mature,50,50,0,70,94,65,50,50,50,90,65,2000s,50,50,war,shooter,92
+Need for Speed: Hot Pursuit,PC,everyone,50,50,0,95,90,78,0,1,90,75,73,2010-sad,0,0,driving,simulation,72
+Need for Speed: Hot Pursuit,PS,everyone,50,50,0,95,90,78,0,1,90,75,73,2010-sad,0,0,driving,simulation,90
+Need for Speed: Hot Pursuit,XBOX,everyone,50,50,0,95,90,78,0,1,90,75,73,2010-sad,0,0,driving,simulation,90
+Need for Speed: Hot Pursuit,Nintendo,everyone,50,50,0,95,90,78,0,1,90,75,73,2010-sad,0,0,driving,simulation,80
+Call of Duty: Modern Warfare 2,PC,mature,50,50,50,70,95,50,50,65,55,95,70,2000s,50,50,war,shooter,92
+Call of Duty: Modern Warfare 2,PS,mature,50,50,50,70,95,50,50,65,55,95,70,2000s,50,50,war,shooter,92
+Call of Duty: Modern Warfare 2,XBOX,mature,50,50,50,70,95,50,50,65,55,95,70,2000s,50,50,war,shooter,92
+Need for Speed: Most Wanted (2012),PC,everyone,50,50,0,95,90,75,50,1,92,79,83,2010-sad,50,0,driving,simulation,80
+Need for Speed: Most Wanted (2012),PS,everyone,50,50,0,95,90,75,50,1,92,79,83,2010-sad,0,0,driving,simulation,80
+Need for Speed: Most Wanted (2012),XBOX,everyone,50,50,0,95,90,75,50,1,92,79,83,2010-sad,0,0,driving,simulation,80
+Need for Speed: Heat,PC,everyone,50,50,0,10,80,65,50,100,90,70,100,2010-sad,0,0,driving,simulation,73
+Need for Speed: Heat,PS,everyone,50,50,0,10,80,65,50,100,90,70,100,2010-sad,0,0,driving,simulation,73
+Need for Speed: Heat,XBOX,everyone,50,50,0,10,80,65,50,100,90,70,100,2010-sad,0,0,driving,simulation,73
+Call of Duty: Modern Warfare 3,PC,mature,50,50,50,55,90,50,50,70,55,85,85,2010-sad,50,50,war,shooter,94
+Call of Duty: Modern Warfare 3,PS,mature,50,50,50,55,90,50,50,70,55,85,85,2010-sad,50,50,war,shooter,94
+Call of Duty: Modern Warfare 3,XBOX,mature,50,50,50,55,90,50,50,70,55,85,85,2010-sad,50,50,war,shooter,94
+Call of Duty: Modern Warfare 3,Nintendo,mature,50,50,50,55,90,50,50,70,55,85,85,2010-sad,50,50,war,shooter,94
+Call of Duty: Modern Warfare (2019),PC,mature,50,50,50,10,82,40,50,80,60,95,100,2010-sad,0,50,war,shooter,68
+Call of Duty: Modern Warfare (2019),PS,mature,50,50,50,10,82,40,50,80,60,95,100,2010-sad,0,50,war,shooter,68
+Call of Duty: Modern Warfare (2019),XBOX,mature,50,50,50,10,82,40,50,80,60,95,100,2010-sad,0,50,war,shooter,68
+Call of Duty: Advanced Warfare,PC,mature,50,50,50,15,91,55,50,80,65,100,90,2010-sad,50,50,war,shooter,75
+Call of Duty: Advanced Warfare,PS,mature,50,50,50,15,91,55,50,80,65,100,90,2010-sad,50,50,war,shooter,75
+Call of Duty: Advanced Warfare,XBOX,mature,50,50,50,15,91,55,50,80,65,100,90,2010-sad,50,50,war,shooter,75
+Call of Duty: Infinite Warfare,PC,mature,50,50,50,15,77,50,50,85,60,100,95,2010-sad,50,50,war,shooter,63
+Call of Duty: Infinite Warfare,PS,mature,50,50,50,15,77,50,50,85,60,100,95,2010-sad,50,50,war,shooter,63
+Call of Duty: Infinite Warfare,XBOX,mature,50,50,50,15,77,50,50,85,60,100,95,2010-sad,50,50,war,shooter,63
+Call of Duty: World at War,PC,mature,50,50,50,70,92,40,0,50,50,70,75,2000s,50,0,war,shooter,91
+Call of Duty: World at War,PS,mature,50,50,50,70,92,40,0,50,50,70,75,2000s,50,0,war,shooter,91
+Call of Duty: World at War,XBOX,mature,50,50,50,70,92,40,0,50,50,70,75,2000s,50,0,war,shooter,91
+Call of Duty: World at War,Nintendo,mature,50,50,50,70,92,40,0,50,50,70,75,2000s,50,0,war,shooter,91
+Call of Duty: Black Ops,PC,mature,50,50,50,50,85,40,50,65,55,80,75,2010-sad,50,50,war,shooter,82
+Call of Duty: Black Ops,PS,mature,50,50,50,50,85,40,50,65,55,80,75,2010-sad,50,50,war,shooter,82
+Call of Duty: Black Ops,XBOX,mature,50,50,50,50,85,40,50,65,55,80,75,2010-sad,50,50,war,shooter,82
+Call of Duty: Black Ops,Nintendo,mature,50,50,50,50,85,40,50,65,55,80,75,2010-sad,50,50,war,shooter,82
+Call of Duty: Black Ops II,PC,mature,50,50,50,15,93,50,50,70,60,85,80,2010-sad,50,50,war,shooter,88
+Call of Duty: Black Ops II,PS,mature,50,50,50,15,93,50,50,70,60,85,80,2010-sad,50,50,war,shooter,88
+Call of Duty: Black Ops II,XBOX,mature,50,50,50,15,93,50,50,70,60,85,80,2010-sad,50,50,war,shooter,88
+Call of Duty: Black Ops II,Nintendo,mature,50,50,50,15,93,50,50,70,60,85,80,2010-sad,50,50,war,shooter,88
+Call of Duty: Black Ops III,PC,mature,50,50,50,10,92,80,50,80,70,95,95,2010-sad,50,50,war,shooter,68
+Call of Duty: Black Ops III,PS,mature,50,50,50,10,92,80,50,80,70,95,95,2010-sad,50,50,war,shooter,68
+Call of Duty: Black Ops III,XBOX,mature,50,50,50,10,92,80,50,80,70,95,95,2010-sad,50,50,war,shooter,68
+Call of Duty: Black Ops 4,PC,mature,0,50,50,10,85,1,50,90,90,100,100,2010-sad,50,50,war,shooter,68
+Call of Duty: Black Ops 4,PS,mature,0,50,50,10,85,1,50,90,90,100,100,2010-sad,50,50,war,shooter,68
+Call of Duty: Black Ops 4,XBOX,mature,0,50,50,10,85,1,50,90,90,100,100,2010-sad,50,50,war,shooter,68
+Call of Duty: Ghosts,PC,mature,50,50,50,15,88,25,0,60,60,100,75,2010-sad,50,50,war,shooter,57
+Call of Duty: Ghosts,PS,mature,50,50,50,15,88,25,0,60,60,100,75,2010-sad,50,50,war,shooter,57
+Call of Duty: Ghosts,XBOX,mature,50,50,50,15,88,25,0,60,60,100,75,2010-sad,50,50,war,shooter,57
+Call of Duty: Ghosts,Nintendo,mature,50,50,50,15,88,25,0,60,60,100,75,2010-sad,50,50,war,shooter,57
+Need for Speed Payback,PC,teen,50,50,50,70,59,100,0,80,80,70,95,2010-sad,0,0,driving,simulation,72
+Need for Speed Payback,PS,teen,50,50,50,70,59,100,0,80,80,70,95,2010-sad,0,0,driving,simulation,90
+Need for Speed Payback,XBOX,teen,50,50,50,70,59,100,0,80,80,70,95,2010-sad,0,0,driving,simulation,90
+Need for Speed,PC,teen,50,50,50,83,63,90,0,90,80,60,90,2010-sad,0,0,driving,simulation,78
+Need for Speed,PS,teen,50,50,50,83,63,90,0,90,80,60,90,2010-sad,0,0,driving,simulation,90
+Need for Speed,XBOX,teen,50,50,50,83,63,90,0,90,80,60,90,2010-sad,0,0,driving,simulation,90
+Need for Speed Undercover,PC,everyone,50,50,50,90,50,85,0,60,70,55,55,2010-sad,0,0,driving,simulation,86
+Need for Speed Undercover,PS,everyone,50,50,50,90,50,85,0,60,70,55,55,2010-sad,0,0,driving,simulation,86
+Need for Speed Undercover,XBOX,everyone,50,50,50,90,50,85,0,60,70,55,55,2010-sad,0,0,driving,simulation,86
+Need for Speed Undercover,Nintendo,everyone,50,50,50,90,50,85,0,60,70,55,55,2010-sad,0,0,driving,simulation,86
+Collin McRae Dirt,PC,everyone,50,50,50,85,84,83,0,30,40,70,60,2000s,0,0,driving,simulation,100
+Collin McRae Dirt,PS,everyone,50,50,50,85,84,83,0,30,40,70,60,2000s,0,0,driving,simulation,100
+Collin McRae Dirt,XBOX,everyone,50,50,50,85,84,83,0,30,40,70,60,2000s,0,0,driving,simulation,100
+Collin McRae Dirt 2,PC,everyone,50,50,50,85,84,87,0,35,40,70,65,2000s,0,0,driving,simulation,100
+Collin McRae Dirt 2,PS,everyone,50,50,50,85,84,87,0,35,40,70,65,2000s,0,0,driving,simulation,100
+Collin McRae Dirt 2,XBOX,everyone,50,50,50,85,84,87,0,35,40,70,65,2000s,0,0,driving,simulation,100
+Collin McRae Dirt 2,Nintendo,everyone,50,0,50,85,84,87,0,35,45,75,65,2000s,0,0,driving,simulation,90
+Dirt 3,PC,teen,50,50,50,90,85,90,50,35,45,80,78,2010-sad,0,0,driving,simulation,93
+Dirt 3,PS,teen,50,50,50,90,85,90,50,35,45,80,78,2010-sad,0,0,driving,simulation,100
+Dirt 3,XBOX,teen,50,50,50,90,85,90,50,35,45,80,78,2010-sad,0,0,driving,simulation,100
+Dirt Rally,PC,everyone,50,50,0,50,89,100,50,35,60,90,86,2010-sad,50,0,driving,simulation,90
+Dirt Rally,PS,everyone,50,50,0,50,89,100,50,35,60,90,86,2010-sad,0,0,driving,simulation,90
+Dirt Rally,XBOX,everyone,50,50,0,50,89,100,50,35,60,90,86,2010-sad,0,0,driving,simulation,90
+Dirt Rally 2.0,PC,everyone,50,50,0,10,85,100,50,35,65,90,90,2010-sad,50,0,driving,simulation,61
+Dirt Rally 2.0,PS,everyone,50,50,0,10,85,100,50,35,65,90,90,2010-sad,0,0,driving,simulation,80
+Dirt Rally 2.0,XBOX,everyone,50,50,0,10,85,100,50,35,65,90,90,2010-sad,0,0,driving,simulation,80
+Portal 2,PC,everyone,50,50,50,98,95,75,50,1,35,67,80,2010-sad,50,50,action,shooter,100
+Portal 2,PS,everyone,50,50,50,98,95,75,50,1,35,67,80,2010-sad,0,50,action,shooter,100
+Portal 2,XBOX,everyone,50,50,50,98,95,75,50,1,35,67,80,2010-sad,0,50,action,shooter,100
+Portal,PC,everyone,50,0,0,98,82,25,0,1,20,55,72,2010-sad,50,50,action,shooter,100
+Portal,PS,everyone,50,0,0,98,82,25,0,1,20,55,72,2010-sad,0,50,action,shooter,100
+Portal,XBOX,everyone,50,0,0,98,82,25,0,1,20,55,72,2010-sad,0,50,action,shooter,100
+Half Life 2,PC,mature,50,50,0,98,97,80,50,10,40,90,68,2000s,50,50,action,shooter,100
+Half Life 2,PS,mature,50,50,0,98,97,80,50,10,40,90,68,2000s,0,50,action,shooter,100
+Half Life 2,XBOX,mature,50,50,0,98,97,80,50,10,40,90,68,2000s,0,50,action,shooter,100
+God of War OG,PS,mature,50,0,0,70,98,78,0,40,70,95,55,2000s,0,0,adventure,hack_and_slash,100
+God of War 2,PS,mature,50,0,0,70,97,80,0,40,75,95,63,2000s,0,0,adventure,hack_and_slash,100
+God of War 3,PS,mature,50,0,0,70,93,85,0,40,79,100,85,2010-sad,0,0,adventure,hack_and_slash,100
+God of War,PS,mature,50,0,0,73,100,100,50,65,83,100,100,2010-sad,0,0,adventure,hack_and_slash,100
+FIFA 07,PC,everyone,50,50,50,90,89,100,50,50,10,80,75,2000s,50,50,sport,simulation,100
+FIFA 07,PS,everyone,50,50,50,90,89,100,50,50,10,80,75,2000s,50,50,sport,simulation,100
+FIFA 07,XBOX,everyone,50,50,50,90,89,100,50,50,10,80,75,2000s,50,50,sport,simulation,100
+FIFA 07,Nintendo,everyone,50,50,50,90,89,100,50,50,10,80,75,2000s,50,50,sport,simulation,100
+FIFA 07,PC,everyone,50,50,50,93,79,100,0,60,10,85,80,2000s,50,50,sport,simulation,100
+FIFA 07,PS,everyone,50,50,50,93,79,100,0,60,10,85,80,2000s,50,50,sport,simulation,100
+FIFA 07,XBOX,everyone,50,50,50,93,79,100,0,60,10,85,80,2000s,50,50,sport,simulation,100
+FIFA 07,Nintendo,everyone,50,50,50,93,79,100,0,60,10,85,80,2000s,50,50,sport,simulation,100
+FIFA 19,PC,everyone,50,50,50,45,79,100,0,65,10,92,98,2010-sad,50,50,sport,simulation,54
+FIFA 19,PS,everyone,50,50,50,45,79,100,0,65,10,92,98,2010-sad,0,50,sport,simulation,90
+FIFA 19,XBOX,everyone,50,50,50,45,79,100,0,65,10,92,98,2010-sad,0,50,sport,simulation,90
+FIFA 19,Nintendo,everyone,50,50,50,45,79,100,0,65,10,92,98,2010-sad,0,50,sport,simulation,90
+FIFA 20,PC,everyone,50,50,50,20,78,100,50,65,10,93,100,2010-sad,50,50,sport,simulation,67
+FIFA 20,PS,everyone,50,50,50,20,78,100,50,65,10,93,100,2010-sad,0,50,sport,simulation,90
+FIFA 20,XBOX,everyone,50,50,50,20,78,100,50,65,10,93,100,2010-sad,0,50,sport,simulation,90
+FIFA 20,Nintendo,everyone,50,50,50,20,78,100,50,65,10,93,100,2010-sad,0,50,sport,simulation,90
+PES 06,PC,everyone,50,50,50,95,90,100,50,40,10,80,45,2000s,50,50,sport,simulation,100
+PES 06,PS,everyone,50,50,50,95,90,100,50,40,10,80,45,2000s,0,50,sport,simulation,100
+PES 06,XBOX,everyone,50,50,50,95,90,100,50,40,10,80,45,2000s,0,50,sport,simulation,100
+PES 06,Nintendo,everyone,50,50,50,95,90,100,50,40,10,80,45,2000s,0,50,sport,simulation,100
+PES 07,PC,everyone,50,50,50,95,90,100,0,45,10,83,48,2000s,50,50,sport,simulation,100
+PES 07,PS,everyone,50,50,50,95,90,100,0,45,10,83,48,2000s,0,50,sport,simulation,100
+PES 07,XBOX,everyone,50,50,50,95,90,100,0,45,10,83,48,2000s,0,50,sport,simulation,100
+PES 07,Nintendo,everyone,50,50,50,95,90,100,0,45,10,83,48,2000s,0,50,sport,simulation,100
+PES 20,PC,everyone,50,50,50,45,83,100,50,65,10,95,100,2010-sad,50,50,sport,simulation,84
+PES 20,PS,everyone,50,50,50,45,83,100,50,65,10,95,100,2010-sad,0,50,sport,simulation,95
+PES 20,XBOX,everyone,50,50,50,45,83,100,50,65,10,95,100,2010-sad,0,50,sport,simulation,95
+PES 19,PC,everyone,50,50,50,72,82,100,0,65,10,90,98,2010-sad,50,50,sport,simulation,62
+PES 19,PS,everyone,50,50,50,72,82,100,0,65,10,90,98,2010-sad,0,50,sport,simulation,90
+PES 19,XBOX,everyone,50,50,50,72,82,100,0,65,10,90,98,2010-sad,0,50,sport,simulation,90
+League of Legends,PC,teen,0,50,50,100,80,1,50,80,30,40,55,2010-sad,0,50,action,moba,87
+Defense of the Ancients,PC,mature,0,50,0,100,88,1,0,20,35,30,25,90s,50,50,action,moba,100
+Dota 2,PC,mature,0,50,50,100,94,1,50,75,40,35,65,2010-sad,0,50,action,moba,86
+Smite,PC,teen,0,50,50,100,85,1,50,65,35,45,70,2010-sad,0,50,action,moba,83
+Smite,PS,teen,0,50,50,100,85,1,50,65,35,45,70,2010-sad,0,50,action,moba,83
+Smite,XBOX,teen,0,50,50,100,85,1,50,65,35,45,70,2010-sad,0,50,action,moba,83
+Smite,Nintendo,teen,0,50,50,100,85,1,50,65,35,45,70,2010-sad,0,50,action,moba,83
+Heroes of the Storm,PC,teen,0,50,50,100,65,1,50,60,30,30,60,2010-sad,0,50,action,moba,63
+Heroes of Newerth,PC,teen,0,50,50,100,76,1,0,50,30,35,65,2010-sad,0,0,action,moba,100
+Arena of Valor,Nintendo,teen,0,50,0,100,79,1,50,55,35,30,70,2010-sad,0,0,action,moba,85
+Devil May Cry 5,PC,mature,50,50,50,55,95,60,50,65,62,70,90,2010-sad,50,0,adventure,hack_and_slash,84
+Devil May Cry 5,PS,mature,50,50,50,60,95,60,50,65,62,70,90,2010-sad,0,0,adventure,hack_and_slash,81
+Devil May Cry 5,XBOX,mature,50,50,50,60,95,60,50,65,62,70,90,2010-sad,0,0,adventure,hack_and_slash,68
+Crash Team Racing Nitro-Fueled,PS,everyone,50,50,50,57,82,45,50,90,65,90,83,2010-sad,0,50,driving,simulation,93
+Crash Team Racing Nitro-Fueled,Nintendo,everyone,50,50,50,57,82,45,50,90,65,90,83,2010-sad,0,50,driving,simulation,85
+Crash Team Racing Nitro-Fueled,XBOX,everyone,50,50,50,57,82,45,50,90,65,90,83,2010-sad,0,50,driving,simulation,88
+Red Dead Redemption 2,PC,mature,50,50,50,65,100,100,50,91,98,100,100,2010-sad,50,0,adventure,shooter,46
+Red Dead Redemption 2,PS,mature,50,50,50,65,100,100,50,91,98,100,100,2010-sad,0,0,adventure,shooter,85
+Red Dead Redemption 2,XBOX,mature,50,50,50,65,100,100,50,91,98,100,100,2010-sad,0,0,adventure,shooter,79
+Spyro Reignited Trilogy,PC,everyone,50,0,0,45,85,90,50,1,75,85,77,2010-sad,0,0,adventure,platformer,93
+Spyro Reignited Trilogy,PS,everyone,50,0,0,45,85,90,50,1,75,85,77,2010-sad,0,0,adventure,platformer,95
+Spyro Reignited Trilogy,XBOX,everyone,50,0,0,45,85,90,50,1,75,85,77,2010-sad,0,0,adventure,platformer,90
+Spyro Reignited Trilogy,Nintendo,everyone,50,0,0,45,85,90,50,1,75,85,77,2010-sad,0,0,adventure,platformer,93
+The Legend of Zelda: Breath of the Wild,Nintendo,everyone,50,50,50,10,100,100,50,55,87,90,75,2010-sad,50,0,adventure,platformer,97
+World of Warcraft Classic,PC,teen,0,50,50,70,91,1,50,100,100,100,40,2010-sad,50,50,action,rpg,86
+Ratchet and Clank,PS,everyone,50,0,0,80,90,55,50,30,70,80,80,2010-sad,0,0,adventure,platformer,85
+Uncharted 4: A Thief's End,PS,teen,50,50,0,80,90,66,50,15,73,95,90,2010-sad,0,0,adventure,shooter,88
+Marvel's Spider-Man,PS,teen,50,0,0,60,87,78,50,80,90,96,95,2010-sad,0,0,adventure,hack_and_slash,95
+Bloodborne,PS,mature,50,0,0,75,91,95,50,30,75,78,73,2010-sad,0,0,adventure,rpg,91
+Farming Simulator 19,PC,everyone,50,50,50,53,74,100,0,25,82,79,84,2010-sad,50,0,driving,simulation,61
+Farming Simulator 19,PS,everyone,50,50,50,53,74,100,0,25,82,79,84,2010-sad,0,0,driving,simulation,61
+Farming Simulator 19,XBOX,everyone,50,50,50,53,74,100,0,25,82,79,84,2010-sad,0,0,driving,simulation,61
+Farming Simulator 19,Nintendo,everyone,50,50,50,53,74,100,0,25,82,79,84,2010-sad,0,0,driving,simulation,61
+Super Mario Odyssey,Nintendo,everyone,50,50,50,25,100,80,50,10,85,90,82,2010-sad,0,0,adventure,platformer,100
+Horizon Zero Dawn,PS,teen,50,0,0,80,93,90,50,40,95,95,100,2010-sad,0,0,adventure,rpg,96
+Mad Max,PC,mature,50,0,0,60,84,100,0,80,90,60,90,2010-sad,0,0,action,shooter,90
+Mad Max,PS,mature,50,0,0,60,84,100,0,80,90,60,90,2010-sad,0,0,action,shooter,90
+Mad Max,XBOX,mature,50,0,0,60,84,100,0,80,90,60,90,2010-sad,0,0,action,shooter,90
