@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sustavZaPreporukuVideoIgara
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sustavZaPreporukuVideoIgaraML.ConsoleApp", "sustavZaPreporukuVideoIgaraML.ConsoleApp\sustavZaPreporukuVideoIgaraML.ConsoleApp.csproj", "{11C4E560-FD09-4362-8112-02D667A23ADD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prediction", "Prediction\Prediction.csproj", "{3D3B1353-887B-400D-8482-565A9CC6A551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{11C4E560-FD09-4362-8112-02D667A23ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11C4E560-FD09-4362-8112-02D667A23ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11C4E560-FD09-4362-8112-02D667A23ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3B1353-887B-400D-8482-565A9CC6A551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3B1353-887B-400D-8482-565A9CC6A551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3B1353-887B-400D-8482-565A9CC6A551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3B1353-887B-400D-8482-565A9CC6A551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
