@@ -154,9 +154,11 @@
     <Compile Include="Forme\TrinaestoPitanje.Designer.cs">
       <DependentUpon>TrinaestoPitanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CSVGameModel.cs" />
     <Compile Include="Helpers\EvaluationHelper.cs" />
     <Compile Include="Helpers\EvaluationModel.cs" />
     <Compile Include="Helpers\NavigationHelper.cs" />
+    <Compile Include="Helpers\ReadDataHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forme\CetrnaestoPitanje.resx">

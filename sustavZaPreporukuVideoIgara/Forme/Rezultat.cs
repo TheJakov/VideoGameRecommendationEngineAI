@@ -28,6 +28,7 @@ namespace sustavZaPreporukuVideoIgara.Forme
             ZapisiArgumenteUDatoteku();
             PokreniPredictionEXE();
             PuniLabelZaMlModel();
+            NasAlgoritamEvaluacija();
         }
 
         private void btnPocetna_Click(object sender, EventArgs e)
@@ -133,5 +134,26 @@ namespace sustavZaPreporukuVideoIgara.Forme
                 }
             }
         }
+
+        #region NasAlgoritam
+
+        /// <summary>
+        /// Ako ne kuzis idi kroz metode i skuzit ces.
+        /// Ako jos uvijek ne kuzis, pitaj Jakova.
+        /// </summary>
+        private void NasAlgoritamEvaluacija()
+        {
+            string sviPodaciTekst = ReadDataHelper.ProcitajCSVPodatke();
+            string[] sviRedci = ReadDataHelper.PrepoznajRetkeIzTeksta(sviPodaciTekst, '\n');
+            List<CSVGameModel> ListaSvihIgara = ReadDataHelper.DohvatiListuIgara(sviRedci, ',');
+            EvaluationHelper.EvalutateList(ListaSvihIgara);
+            List<CSVGameModel> orderedList = ListaSvihIgara.OrderByDescending(x => x.Score).ToList();
+
+            label1st.Text = orderedList[0].GameName + "  - ukupan broj bodova: " + orderedList[0].Score;
+            label2nd.Text = orderedList[1].GameName + "  - ukupan broj bodova: " + orderedList[1].Score;
+            label3rd.Text = orderedList[2].GameName + "  - ukupan broj bodova: " + orderedList[2].Score;
+        }
+
+        #endregion
     }
 }
