@@ -1,0 +1,13 @@
+Prije pokretanja programa, potrebno je maknuti pravo "Samo čitanje" s foldera u kojem se nalazi cjelokupni projekt.
+
+Inače NE radi!!!
+
+Koraci
+-Odabrati VideoGameRecommendationEngineAI folder
+-Desni klik miša na folder
+-Odabrati "svojstva" ili properties (preferences)
+-Kod polja "Atributi" ili Attributes maknuti oznaku "Samo čitanje" (Read-only)
+-odabrati "U redu"
+-odabrati "U redu"
+
+To je to, sad bi trebala raditi predikcija putem ML modela
