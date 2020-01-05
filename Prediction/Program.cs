@@ -8,59 +8,50 @@ namespace Prediction
 {
     class Program
     {
-        /**
-         * Sa testnim podacima s1 samostalno radi
-         * isti ti podaci putem forme ne rade
-         * */
-        private static string path = @"..\..\..\..\MyTest.txt";
+        private static string path = @"..\..\..\Results.txt";
+        private static string pathArgs = @"..\..\..\Args.txt";
         private static List<ModelInput> sveKombinacijeModelInputa = new List<ModelInput>();
+
         static void Main(string[] args)
         {
-            //string s1="XBOX mature True False 60 80 76 100 3 3 3 3 3 2010-sad False False -l1 rpg -l2 apocalyptic";
-            //args = s1.Split(' ');
-            //string s1 = "PS everyone True True 1 80 51 75 2 2 1 1 1 2010-sad True True -l1 rpg -l2 crime adventure";
-            //args = s1.Split(' ');
-            
-            foreach (string item in args)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
-            //Console.ReadLine();
-            
+            Console.WriteLine("Obrađujem podatke ...");
 
+            string zapis = File.ReadAllText(pathArgs);
+            args = zapis.Split(";");
 
             SrediArgumente(args);
             PuniMlModelPodacimaKorisnika();
-            ZapisiUDatoteku();
-            //Console.ReadLine();
+            PredikcijaIZapisUDatoteku();
+
             Environment.Exit(0);
         }
 
+        #region Predradnje prije predikcije
         private static void SrediArgumente(string[] args)
         {
             EvaluationModel.Platform = args[0];
             EvaluationModel.ESRB = args[1];
             EvaluationModel.Singleplayer = bool.Parse(args[2]);
             EvaluationModel.Multiplayer = bool.Parse(args[3]);
-            EvaluationModel.Price = int.Parse(args[4]);
-            EvaluationModel.IGNRating = int.Parse(args[5]);
-            EvaluationModel.CampaignDurationMin = int.Parse(args[6]);
-            EvaluationModel.CampaignDurationMax = int.Parse(args[7]);
-            EvaluationModel.KoefPopular = int.Parse(args[8]);
-            EvaluationModel.KoefCustomization = int.Parse(args[9]);
-            EvaluationModel.KoefWorldSize = int.Parse(args[10]);
-            EvaluationModel.KoefWorldDiversity = int.Parse(args[11]);
-            EvaluationModel.KoefGraphicsQuality = int.Parse(args[12]);
-            EvaluationModel.ReleasePeriod = args[13];
-            EvaluationModel.Modding = bool.Parse(args[14]);
-            EvaluationModel.Competitive = bool.Parse(args[15]);
+            EvaluationModel.Coop = bool.Parse(args[4]);
+            EvaluationModel.Price = int.Parse(args[5]);
+            EvaluationModel.IGNRating = int.Parse(args[6]);
+            EvaluationModel.CampaignDurationMin = int.Parse(args[7]);
+            EvaluationModel.CampaignDurationMax = int.Parse(args[8]);
+            EvaluationModel.KoefPopular = int.Parse(args[9]);
+            EvaluationModel.KoefCustomization = int.Parse(args[10]);
+            EvaluationModel.KoefWorldSize = int.Parse(args[11]);
+            EvaluationModel.KoefWorldDiversity = int.Parse(args[12]);
+            EvaluationModel.KoefGraphicsQuality = int.Parse(args[13]);
+            EvaluationModel.ReleasePeriod = args[14];
+            EvaluationModel.Modding = bool.Parse(args[15]);
+            EvaluationModel.Competitive = bool.Parse(args[16]);
 
             int brojac = 0;
             List<string> l1 = new List<string>();
-            if (args[16].Equals("-l1"))
+            if (args[17].Equals("-l1"))
             {
-                for (int i = 17; i < args.Length; i++)
+                for (int i = 18; i < args.Length; i++)
                 {
                     if (args[i].Equals("-l2"))
                     {
@@ -78,7 +69,10 @@ namespace Prediction
             {
                 for (int i = brojac + 1; i < args.Length; i++)
                 {
-                    l2.Add(args[i]);
+                    if (!args[i].Equals(""))
+                    {
+                        l2.Add(args[i]);
+                    }
                 }
             }
 
@@ -252,37 +246,25 @@ namespace Prediction
 
             return model;
         }
+        #endregion
 
-        private static string SrediZapisZaTXT()
+        #region Predikcija i stvaranje zapisa
+        private static string IzvrsiPredikciju()
         {
-            Console.WriteLine("test 1");
-            /**
-             * Ovdje sad zapinje program kad se pokrece iz forme aplikacije, prekida s radom i izade (bez error-a).
-             * Kad se samostalno debagira, ispravno radi, tj. vrši predikciju
-             * Niti try catch ne pomaže
-             * Thread Sleep sam probao ako nešto pre brzo ide da usporim, ali ni to ne pomaže
-             **/
             List<ModelOutput> modelOutputs = new List<ModelOutput>();
             foreach (ModelInput input in sveKombinacijeModelInputa)
             {
-                Console.WriteLine("unutra sam");
                 ModelOutput output;
                 try
                 {
                     output = ConsumeModel.Predict(input);
-                    Thread.Sleep(1000);
                     modelOutputs.Add(output);
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
                 }
-
-                Console.WriteLine("gotov");
             }
-
-            Console.WriteLine("test 2");
-            //Console.ReadLine();
 
             string zapis = "";
             foreach (ModelOutput output in modelOutputs)
@@ -291,33 +273,29 @@ namespace Prediction
                 zapis += output.Prediction + " : " + output.Score[output.Score.Length - 1] + "\n";
             }
 
-            Console.WriteLine("test 3");
             return zapis;
         }
 
-        private static void ZapisiUDatoteku()
+        private static void PredikcijaIZapisUDatoteku()
         {
-            Console.WriteLine("test ");
-            string s = SrediZapisZaTXT();
-            Console.WriteLine("test dobro");
+            string rezultati = IzvrsiPredikciju();
+
             if (!File.Exists(path))
-            {    
-                /*
+            {
                 using (StreamWriter sw = File.CreateText(path))
                 {
-                    sw.WriteLine(s);
+                    sw.WriteLine(rezultati);
                 }
-                */
-                File.WriteAllText(path, s);
             }
             else
             {
                 File.Delete(path);
                 using (StreamWriter sw = File.CreateText(path))
                 {
-                    sw.WriteLine(s);
+                    sw.WriteLine(rezultati);
                 }
             }
         }
+        #endregion
     }
 }

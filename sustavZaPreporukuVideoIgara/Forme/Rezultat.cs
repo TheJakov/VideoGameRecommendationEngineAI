@@ -18,14 +18,15 @@ namespace sustavZaPreporukuVideoIgara.Forme
     public partial class Rezultat : Form
     {
         private string cPath = @"..\..\..\Prediction\bin\Debug\netcoreapp3.1";
-        private string path = @"..\..\..\MyTest.txt";
+        private string path = @"..\..\..\Results.txt";
+        private string pathArgs = @"..\..\..\Args.txt";
 
         public Rezultat()
         {
             InitializeComponent();
-
+            
+            ZapisiArgumenteUDatoteku();
             PokreniPredictionEXE();
-            Thread.Sleep(5000);
             PuniLabelZaMlModel();
         }
 
@@ -40,56 +41,15 @@ namespace sustavZaPreporukuVideoIgara.Forme
             Close();
         }
 
-        private string StvoriParametar()
-        {
-            string s = "";
-            s+=EvaluationModel.Platform;
-            s = s+" "+EvaluationModel.ESRB;
-            s = s + " " + EvaluationModel.Singleplayer;
-            s = s + " " + EvaluationModel.Multiplayer;
-            s = s + " " + EvaluationModel.Price;
-            s = s + " " + EvaluationModel.IGNRating;
-            s = s + " " + EvaluationModel.CampaignDurationMin;
-            s = s + " " + EvaluationModel.CampaignDurationMax;
-            s = s + " " + EvaluationModel.KoefPopular;
-            s = s + " " + EvaluationModel.KoefCustomization;
-            s = s + " " + EvaluationModel.KoefWorldSize;
-            s = s + " " + EvaluationModel.KoefWorldDiversity;
-            s = s + " " + EvaluationModel.KoefGraphicsQuality;
-            s = s + " " + EvaluationModel.ReleasePeriod;
-            s = s + " " + EvaluationModel.Modding;
-            s = s + " " + EvaluationModel.Competitive;
-
-            s = s + " " + "-l1 ";
-
-            foreach (string tip in EvaluationModel.ListOfTypes)
-            {
-                s = s + tip + " ";
-            }
-
-            s = s + "-l2 ";
-
-            foreach (string genre in EvaluationModel.ListOfGenres)
-            {
-                s = s + genre + " ";
-            }
-
-            return s.Trim();
-        }
+      
 
         private void PokreniPredictionEXE()
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(string.Concat(cPath, "\\", "Prediction.exe"));
-            string s = StvoriParametar();
-            startInfo.Arguments = s;
-            //string s = "XBOX adults False False 80 90 76 100 3 3 3 3 3 2010-sad False False -l1 platformer  -l2 apocalyptic";
             startInfo.UseShellExecute = false;
-            //System.Diagnostics.Process.Start(startInfo);
 
             try
             {
-                // Start the process with the info we specified.
-                // Call WaitForExit and then the using statement will close.
                 using (Process exeProcess = Process.Start(startInfo))
                 {
                     exeProcess.WaitForExit();
@@ -97,7 +57,6 @@ namespace sustavZaPreporukuVideoIgara.Forme
             }
             catch
             {
-                // Log error.
             }
         }
 
@@ -113,6 +72,64 @@ namespace sustavZaPreporukuVideoIgara.Forme
                     {
                         labelAIresult.Text += s + "\n";
                     }
+                }
+            }
+        }
+
+        private string StvoriParametar()
+        {
+            string s = "";
+            s += EvaluationModel.Platform;
+            s = s + ";" + EvaluationModel.ESRB;
+            s = s + ";" + EvaluationModel.Singleplayer;
+            s = s + ";" + EvaluationModel.Multiplayer;
+            s = s + ";" + EvaluationModel.Coop;
+            s = s + ";" + EvaluationModel.Price;
+            s = s + ";" + EvaluationModel.IGNRating;
+            s = s + ";" + EvaluationModel.CampaignDurationMin;
+            s = s + ";" + EvaluationModel.CampaignDurationMax;
+            s = s + ";" + EvaluationModel.KoefPopular;
+            s = s + ";" + EvaluationModel.KoefCustomization;
+            s = s + ";" + EvaluationModel.KoefWorldSize;
+            s = s + ";" + EvaluationModel.KoefWorldDiversity;
+            s = s + ";" + EvaluationModel.KoefGraphicsQuality;
+            s = s + ";" + EvaluationModel.ReleasePeriod;
+            s = s + ";" + EvaluationModel.Modding;
+            s = s + ";" + EvaluationModel.Competitive;
+
+            s = s + ";" + "-l1;";
+
+            foreach (string tip in EvaluationModel.ListOfTypes)
+            {
+                s = s + tip + ";";
+            }
+
+            s = s + "-l2;";
+
+            foreach (string genre in EvaluationModel.ListOfGenres)
+            {
+                s = s + genre + ";";
+            }
+
+            return s.Trim();
+        }
+
+        private void ZapisiArgumenteUDatoteku()
+        {
+            string parametar = StvoriParametar();
+            if (!File.Exists(pathArgs))
+            {
+                using (StreamWriter sw = File.CreateText(pathArgs))
+                {
+                    sw.Write(parametar);
+                }
+            }
+            else
+            {
+                File.Delete(pathArgs);
+                using (StreamWriter sw = File.CreateText(pathArgs))
+                {
+                    sw.Write(parametar);
                 }
             }
         }
