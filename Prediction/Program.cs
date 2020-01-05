@@ -15,6 +15,7 @@ namespace Prediction
         static void Main(string[] args)
         {
             Console.WriteLine("Obrađujem podatke ...");
+            Thread.Sleep(100);
 
             string zapis = File.ReadAllText(pathArgs);
             args = zapis.Split(";");
@@ -251,9 +252,13 @@ namespace Prediction
         #region Predikcija i stvaranje zapisa
         private static string IzvrsiPredikciju()
         {
+            string[] tocke = new string[4] { ".", "..", "...", "."};
+            int i = 0;
             List<ModelOutput> modelOutputs = new List<ModelOutput>();
             foreach (ModelInput input in sveKombinacijeModelInputa)
             {
+                Console.Clear();
+                Console.WriteLine("Obrađujem podatke "+tocke[i++]);
                 ModelOutput output;
                 try
                 {
