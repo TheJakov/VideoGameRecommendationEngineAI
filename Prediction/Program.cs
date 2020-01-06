@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using SustavZaPreporukuVideoIgaraML.Model;
+using System.Linq;
 
 namespace Prediction
 {
@@ -16,6 +17,8 @@ namespace Prediction
         {
             Console.WriteLine("Obrađujem podatke ...");
             Thread.Sleep(100);
+            Console.WindowHeight=15;
+            Console.WindowWidth=55;
 
             string zapis = File.ReadAllText(pathArgs);
             args = zapis.Split(";");
@@ -263,6 +266,7 @@ namespace Prediction
                 try
                 {
                     output = ConsumeModel.Predict(input);
+                    Array.Sort(output.Score);
                     modelOutputs.Add(output);
                 }
                 catch (Exception e)
@@ -271,11 +275,14 @@ namespace Prediction
                 }
             }
 
+             modelOutputs = modelOutputs.OrderByDescending(x => x.Score.Last()).ToList();
+
             string zapis = "";
             foreach (ModelOutput output in modelOutputs)
             {
-                Array.Sort(output.Score);
-                zapis += output.Prediction + " : " + output.Score[output.Score.Length - 1] + "\n";
+                decimal broj = (decimal)output.Score[output.Score.Length - 1]*100; 
+                broj = (decimal)(Math.Round(broj, 2));
+                zapis += output.Prediction + ";" + broj +"%" + "\n";
             }
 
             return zapis;

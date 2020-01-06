@@ -67,11 +67,22 @@ namespace sustavZaPreporukuVideoIgara.Forme
             {
                 using (StreamReader sr = File.OpenText(path))
                 {
-                    labelAIresult.Text = "";
+                    prvoMjesto.Text = "";
                     string s = "";
+                    int br = 0;
                     while ((s = sr.ReadLine()) != null)
                     {
-                        labelAIresult.Text += s + "\n";
+                        string[] split=s.Split(';');
+                        if (split.Length < 2)
+                            break;
+
+                        if (br==0)
+                            prvoMjesto.Text = split[0]+ "   -   Preporuka od: " + split[1];
+                        else if(br==1)
+                            drugoMjesto.Text = split[0] + "    -   Preporuka od: " + split[1];
+                        else if (br == 2)
+                            treceMjesto.Text = split[0] + "    -   Preporuka od: " + split[1];
+                        br++;                        
                     }
                 }
             }

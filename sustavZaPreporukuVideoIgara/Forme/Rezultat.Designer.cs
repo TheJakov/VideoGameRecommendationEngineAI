@@ -45,8 +45,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelAIresult = new System.Windows.Forms.Label();
+            this.prvoMjesto = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.drugoMjesto = new System.Windows.Forms.Label();
+            this.treceMjesto = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBronze)).BeginInit();
@@ -209,15 +214,15 @@
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
-            // labelAIresult
+            // prvoMjesto
             // 
-            this.labelAIresult.AutoSize = true;
-            this.labelAIresult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAIresult.Location = new System.Drawing.Point(184, 619);
-            this.labelAIresult.Name = "labelAIresult";
-            this.labelAIresult.Size = new System.Drawing.Size(249, 25);
-            this.labelAIresult.TabIndex = 59;
-            this.labelAIresult.Text = "Text to override too too too!";
+            this.prvoMjesto.AutoSize = true;
+            this.prvoMjesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prvoMjesto.Location = new System.Drawing.Point(239, 583);
+            this.prvoMjesto.Name = "prvoMjesto";
+            this.prvoMjesto.Size = new System.Drawing.Size(19, 25);
+            this.prvoMjesto.TabIndex = 59;
+            this.prvoMjesto.Text = "-";
             // 
             // label7
             // 
@@ -229,14 +234,69 @@
             this.label7.TabIndex = 60;
             this.label7.Text = "Nadamo se da ni naš ML algoritam nije ponudio skroz lošu ideju.";
             // 
+            // drugoMjesto
+            // 
+            this.drugoMjesto.AutoSize = true;
+            this.drugoMjesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drugoMjesto.Location = new System.Drawing.Point(239, 617);
+            this.drugoMjesto.Name = "drugoMjesto";
+            this.drugoMjesto.Size = new System.Drawing.Size(19, 25);
+            this.drugoMjesto.TabIndex = 61;
+            this.drugoMjesto.Text = "-";
+            // 
+            // treceMjesto
+            // 
+            this.treceMjesto.AutoSize = true;
+            this.treceMjesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treceMjesto.Location = new System.Drawing.Point(239, 652);
+            this.treceMjesto.Name = "treceMjesto";
+            this.treceMjesto.Size = new System.Drawing.Size(19, 25);
+            this.treceMjesto.TabIndex = 62;
+            this.treceMjesto.Text = "-";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(205, 583);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 25);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "1.";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(205, 617);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 25);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "2.";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(205, 652);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(30, 25);
+            this.label12.TabIndex = 65;
+            this.label12.Text = "3.";
+            // 
             // Rezultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 871);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.treceMjesto);
+            this.Controls.Add(this.drugoMjesto);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.labelAIresult);
+            this.Controls.Add(this.prvoMjesto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -288,7 +348,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelAIresult;
+        private System.Windows.Forms.Label prvoMjesto;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label drugoMjesto;
+        private System.Windows.Forms.Label treceMjesto;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
