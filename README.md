@@ -29,3 +29,19 @@ korisniku predlaže top N video igara koje bi ga mogle zanimati.
 #### c) Rezultat - završni zaslon (dva načina pronalaženja)
 
 <img alt="Slika rezultat" src="https://github.com/TheJakov/VideoGameRecommendationEngineAI/blob/master/Media/readme_ui_final.png" width="570" height="730">
+
+### Predikcija pomoću ML mi ne radi ?
+
+U nekim slučajevima, prije pokretanja programa potrebno je maknuti pravo **"Samo čitanje"** s *foldera* u kojem se nalazi cjelokupni projekt.
+
+#### Koraci su:
+
+1) Odabrati *VideoGameRecommendationEngineAI* folder
+2) Desni klik miša na folder -> Odabrati **"Svojstva"** ili **Properties (preferences)**
+3) Kod polja *"Atributi"* ili *Attributes* maknuti oznaku **"Samo čitanje" (Read-only)**
+4) Odabrati **"U redu"**
+5) Odabrati **"U redu"**
+
+To je to, sad bi trebala raditi predikcija putem ML modela
+
+
