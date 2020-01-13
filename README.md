@@ -28,4 +28,4 @@ korisniku predlaže top N video igara koje bi ga mogle zanimati.
 
 #### c) Rezultat - završni zaslon (dva načina pronalaženja)
 
-<img alt="Slika rezultat" src="https://github.com/TheJakov/VideoGameRecommendationEngineAI/blob/master/Media/readme_ui_final.png" width="616" height="600">
+<img alt="Slika rezultat" src="https://github.com/TheJakov/VideoGameRecommendationEngineAI/blob/master/Media/readme_ui_final.png" width="570" height="730">
