@@ -43,60 +43,61 @@ namespace sustavZaPreporukuVideoIgara.Helpers
         {
             foreach (var igra in listaIgara)
             {
+                igra.Score = 0;
                 if (EvaluationModel.Platform != igra.Platform) { }
                 else
                 {
-                    if (EvaluationModel.ESRB != igra.ESRB) { }
+                    if (EvaluationModel.Multiplayer == true && igra.Multiplayer == 0) { }
                     else
                     {
-                        if (EvaluationModel.Multiplayer == true && igra.Multiplayer == 0) { }
+                        if(EvaluationModel.Singleplayer==true && igra.Singleplayer == 0) { }
                         else
                         {
-                            if(EvaluationModel.Singleplayer==true && igra.Singleplayer == 0) { }
+                            if (EvaluationModel.Coop == true && igra.Coop == 0) { }
                             else
                             {
-                                if (EvaluationModel.Coop == true && igra.Coop == 0) { }
+                                if (!EvaluationModel.ListOfTypes.Contains(igra.Type)) { }
                                 else
                                 {
-                                    if (!EvaluationModel.ListOfTypes.Contains(igra.Type)) { }
+                                    if (!EvaluationModel.ListOfGenres.Contains(igra.Genre)) { }
                                     else
                                     {
-                                        if (!EvaluationModel.ListOfGenres.Contains(igra.Genre)) { }
+                                        if (EvaluationModel.Price > igra.Price) { }
                                         else
                                         {
-                                            if (EvaluationModel.Price > igra.Price) { }
+                                            if (EvaluationModel.IGNRating > igra.IGNRating) { }
                                             else
                                             {
-                                                if (EvaluationModel.IGNRating > igra.IGNRating) { }
-                                                else
+                                                if(igra.CampaignDuration >= EvaluationModel.CampaignDurationMin && igra.CampaignDuration <= EvaluationModel.CampaignDurationMax)
                                                 {
-                                                    if(igra.CampaignDuration >= EvaluationModel.CampaignDurationMin && igra.CampaignDuration <= EvaluationModel.CampaignDurationMax)
-                                                    {
-                                                        igra.CampaignDuration = igra.CampaignDuration * 2;
-                                                    }
-                                                    if(igra.Period == EvaluationModel.ReleasePeriod)
-                                                    {
-                                                        igra.CampaignDuration += 50;
-                                                    }
-                                                    if(igra.Competitive == 50 && EvaluationModel.Competitive == true)
-                                                    {
-                                                        igra.Competitive = igra.Competitive * 2;
-                                                    }
-                                                    if(igra.Modding == 50 && EvaluationModel.Modding == true)
-                                                    {
-                                                        igra.Modding = igra.Modding * 2;
-                                                    }
-                                                    igra.CharCustomization = igra.CharCustomization * (int)EvaluationModel.KoefCustomization;
-                                                    igra.WorldDiversity = igra.WorldDiversity * (int)EvaluationModel.KoefWorldDiversity;
-                                                    igra.Graphics = igra.Graphics * (int)EvaluationModel.KoefGraphicsQuality;
-                                                    igra.WorldDiversity = igra.WorldSize * (int)EvaluationModel.KoefWorldSize;
-                                                    igra.IsPopular = igra.IsPopular * (int)EvaluationModel.KoefPopular;
-
-                                                    igra.Score = igra.Singleplayer + igra.Multiplayer + igra.Coop + igra.Price +
-                                                                 igra.IGNRating + igra.CampaignDuration + igra.IsPopular +
-                                                                 igra.CharCustomization + igra.WorldSize + igra.WorldDiversity +
-                                                                 igra.Graphics + igra.Modding + igra.Competitive + igra.Optimization;
+                                                    igra.CampaignDuration = igra.CampaignDuration * 2;
                                                 }
+                                                if(igra.Period == EvaluationModel.ReleasePeriod)
+                                                {
+                                                    igra.Score += 50;  //tražen period
+                                                }
+                                                if(EvaluationModel.ESRB == igra.ESRB)
+                                                {
+                                                    igra.Score += 100;  //tražen ESRB
+                                                }
+                                                if (igra.Competitive == 50 && EvaluationModel.Competitive == true)
+                                                {
+                                                    igra.Competitive = igra.Competitive * 2;
+                                                }
+                                                if(igra.Modding == 50 && EvaluationModel.Modding == true)
+                                                {
+                                                    igra.Modding = igra.Modding * 2;
+                                                }
+                                                igra.CharCustomization = igra.CharCustomization * (int)EvaluationModel.KoefCustomization;
+                                                igra.WorldDiversity = igra.WorldDiversity * (int)EvaluationModel.KoefWorldDiversity;
+                                                igra.Graphics = igra.Graphics * (int)EvaluationModel.KoefGraphicsQuality;
+                                                igra.WorldDiversity = igra.WorldSize * (int)EvaluationModel.KoefWorldSize;
+                                                igra.IsPopular = igra.IsPopular * (int)EvaluationModel.KoefPopular;
+
+                                                igra.Score += igra.Singleplayer + igra.Multiplayer + igra.Coop + igra.Price +
+                                                                igra.IGNRating + igra.CampaignDuration + igra.IsPopular +
+                                                                igra.CharCustomization + igra.WorldSize + igra.WorldDiversity +
+                                                                igra.Graphics + igra.Modding + igra.Competitive + igra.Optimization;
                                             }
                                         }
                                     }
@@ -105,7 +106,6 @@ namespace sustavZaPreporukuVideoIgara.Helpers
                         }
                     }
                 }
-
             }
         }
     }
