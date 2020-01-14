@@ -42,6 +42,6 @@ U nekim slučajevima, prije pokretanja programa potrebno je maknuti pravo **"Sam
 4) Odabrati **"U redu"**
 5) Odabrati **"U redu"**
 
-To je to, sad bi trebala raditi predikcija putem ML modela
+To je to, sad bi trebala raditi i predikcija putem ML modela.
 
 

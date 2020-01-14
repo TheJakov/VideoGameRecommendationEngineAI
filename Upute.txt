@@ -1,13 +1,12 @@
-Prije pokretanja programa, potrebno je maknuti pravo "Samo čitanje" s foldera u kojem se nalazi cjelokupni projekt.
+Predikcija pomoću ML mi ne radi ?
 
-Inače NE radi!!!
+U nekim slučajevima, prije pokretanja programa potrebno je maknuti pravo "Samo čitanje" s foldera u kojem se nalazi cjelokupni projekt.
+Koraci su:
 
-Koraci
--Odabrati VideoGameRecommendationEngineAI folder
--Desni klik miša na folder
--Odabrati "svojstva" ili properties (preferences)
--Kod polja "Atributi" ili Attributes maknuti oznaku "Samo čitanje" (Read-only)
--odabrati "U redu"
--odabrati "U redu"
+  1)  Odabrati VideoGameRecommendationEngineAI folder
+  2)  Desni klik miša na folder -> Odabrati "Svojstva" ili Properties (preferences)
+  3)  Kod polja "Atributi" ili Attributes maknuti oznaku "Samo čitanje" (Read-only)
+  4)  Odabrati "U redu"
+  5)  Odabrati "U redu"
 
-To je to, sad bi trebala raditi predikcija putem ML modela
+To je to, sada bi trebala raditi i predikcija putem ML modela.
